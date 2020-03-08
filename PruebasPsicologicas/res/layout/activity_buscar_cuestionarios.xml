@@ -1,0 +1,312 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_azul_solo"
+    android:scrollbars="vertical"
+    tools:context=".BuscarCuestionarios"
+    tools:ignore="ContentDescription" >
+
+    <TextView
+        android:id="@+id/texto_buscar_prospecto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="53dp"
+        android:layout_marginTop="00dp"
+        android:text="@string/texto_buscar_cuestionario"
+        android:textColor="#00FF00"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textoMunicipio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/texto_buscar_prospecto"
+        android:layout_marginTop="10dp"
+        android:text="@string/texto_municipio"
+        android:textColor="#00FFFF"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/textoAgeb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textoMunicipio"
+		android:layout_toRightOf="@+id/textoMunicipio"
+        android:layout_marginLeft="15dp"
+        android:textColor="#00FFFF"
+        android:textSize="14sp"
+        android:text="@string/texto_ageb" />
+
+    <TextView
+        android:id="@+id/textoArea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textoMunicipio"
+		android:layout_toRightOf="@+id/textoAgeb"
+        android:layout_marginLeft="15dp"
+        android:textColor="#00FFFF"
+        android:textSize="14sp"
+        android:text="@string/texto_area" />
+
+    <TextView
+        android:id="@+id/textoManzana"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textoMunicipio"
+		android:layout_toRightOf="@+id/textoArea"
+        android:layout_marginLeft="15dp"
+        android:textColor="#00FFFF"
+        android:textSize="14sp"
+        android:text="@string/texto_manzana" />
+
+    <TextView
+        android:id="@+id/textoVivienda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textoMunicipio"
+		android:layout_toRightOf="@+id/textoManzana"
+        android:layout_marginLeft="15dp"
+        android:textColor="#00FFFF"
+        android:textSize="14sp"
+        android:text="@string/texto_vivienda" />
+
+    <EditText
+        android:id="@+id/campoMunicipio"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textoMunicipio"
+        android:gravity="center_vertical|center_horizontal"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:inputType="number"
+        android:textColor="#FF0000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/campoAgeb"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/campoMunicipio"
+		android:layout_toRightOf="@+id/campoMunicipio"
+        android:layout_marginLeft="15dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:inputType="number"
+        android:textColor="#FF0000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/campoArea"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/campoMunicipio"
+		android:layout_toRightOf="@+id/campoAgeb"
+        android:layout_marginLeft="15dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:inputType="number"
+        android:textColor="#FF0000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/campoManzana"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/campoMunicipio"
+		android:layout_toRightOf="@+id/campoArea"
+        android:layout_marginLeft="15dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:inputType="number"
+        android:textColor="#FF0000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/campoVivienda"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/campoMunicipio"
+		android:layout_toRightOf="@+id/campoManzana"
+        android:layout_marginLeft="15dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:inputType="number"
+        android:textColor="#FF0000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textoNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/campoAgeb"
+        android:layout_marginTop="20dp"
+        android:textColor="#00FFFF"
+        android:textSize="14sp"
+        android:text="@string/texto_nombre" />
+    
+    <TextView
+        android:id="@+id/textoPaterno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textoNombre"
+        android:layout_toRightOf="@id/textoNombre"
+        android:layout_marginLeft="10dp"
+        android:textColor="#00FFFF"
+        android:textSize="14sp"
+        android:text="@string/texto_paterno" />
+
+    <TextView
+        android:id="@+id/textoMaterno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/textoNombre"
+        android:layout_toRightOf="@id/textoPaterno"
+        android:layout_marginLeft="10dp"
+        android:textColor="#00FFFF"
+        android:textSize="14sp"
+        android:text="@string/texto_materno" />
+
+    <EditText
+        android:id="@+id/campoNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textoNombre"
+        android:gravity="center_vertical|center_horizontal"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:inputType="text"
+        android:textColor="#FF0000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/campoPaterno"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/campoNombre"
+        android:layout_toRightOf="@id/campoNombre"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:inputType="text"
+        android:textColor="#FF0000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/campoMaterno"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/campoPaterno"
+        android:layout_toRightOf="@id/campoPaterno"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:inputType="text"
+        android:textColor="#FF0000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/botonLimpiarCampos"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/campoNombre"
+        android:layout_marginLeft="00dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/boton_sin_texto"
+        android:gravity="center_vertical|center_horizontal"
+        android:onClick="limpiarCampos"
+        android:text="@string/boton_limpiar_campos"
+        android:textAppearance="?android:attr/textAppearanceMediumInverse"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <CheckBox
+        android:id="@+id/caja_ocultar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/botonLimpiarCampos"
+        android:layout_toRightOf="@+id/botonLimpiarCampos"
+        android:layout_marginLeft="20dp"
+        android:text="Ocultar completos y fallecidos"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/botonContinuarCuestionario"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/campoNombre"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/boton_sin_texto"
+        android:gravity="center_vertical|center_horizontal"
+        android:onClick="continuarCuestionario"
+        android:text="@string/boton_continuar_cuestionario"
+        android:textAppearance="?android:attr/textAppearanceMediumInverse"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/monitor_01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/botonFlechaIzquierda"
+        android:layout_marginLeft="29dp"
+        android:layout_toRightOf="@+id/botonFlechaIzquierda" />
+
+    <TextView
+        android:id="@+id/monitor_02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/botonFlechaIzquierda"
+        android:layout_marginLeft="29dp"
+        android:layout_toRightOf="@+id/monitor_01" />
+
+    <ListView
+        android:id="@+id/listaBasico"
+        android:layout_width="wrap_content"
+        android:layout_height="500dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/botonContinuarCuestionario"
+        android:layout_marginTop="10dp"
+        android:drawSelectorOnTop="true"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="true"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:scrollbarStyle="insideOverlay" >
+    </ListView>
+
+    <ImageButton
+        android:id="@+id/botonFlechaIzquierda"
+        android:layout_width="65dp"
+        android:layout_height="43dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="20dp"
+        android:onClick="ventanaAnterior"
+        android:src="@drawable/boton_flecha_izquierda" />
+
+</RelativeLayout>

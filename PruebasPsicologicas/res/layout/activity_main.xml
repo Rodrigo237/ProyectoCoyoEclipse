@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_azul_solo"
+    android:gravity="center_horizontal"
+    tools:context=".pantallas.TabletaPantalla0100"
+    tools:ignore="ContentDescription" >
+
+    <TextView
+        android:id="@+id/texto_pantalla"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="28dp"
+        android:text="@string/texto_pantalla_principal"
+        android:textColor="#00FF00"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/botonBuscarProspectos"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/texto_pantalla"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="38dp"
+        android:background="@drawable/boton_sin_texto"
+        android:onClick="buscarProspecto"
+        android:text="@string/boton_buscar_prospectos"
+        android:textAppearance="?android:attr/textAppearanceMediumInverse"
+        android:textColor="#FFFFFF"
+        android:textSize="21sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/botonBuscarCuestionario"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/botonBuscarProspectos"
+        android:layout_below="@+id/botonBuscarProspectos"
+        android:layout_marginTop="38dp"
+        android:background="@drawable/boton_sin_texto"
+        android:gravity="center_vertical|center_horizontal"
+        android:onClick="buscarCuestionario"
+        android:text="@string/boton_buscar_cuestionario"
+        android:textAppearance="?android:attr/textAppearanceMediumInverse"
+        android:textColor="#FFFFFF"
+        android:textSize="21sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/botonAdministrador"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/botonBuscarProspectos"
+        android:layout_below="@+id/botonBuscarCuestionario"
+        android:layout_marginTop="38dp"
+        android:background="@drawable/boton_sin_texto"
+        android:gravity="center_vertical|center_horizontal"
+        android:onClick="administradorDeBasesDeDatos"
+        android:text="@string/boton_administrador_de_bases_de_datos"
+        android:textAppearance="?android:attr/textAppearanceMediumInverse"
+        android:textColor="#FFFFFF"
+        android:textSize="21sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/botonSalir"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/botonBuscarProspectos"
+        android:layout_below="@+id/botonAdministrador"
+        android:layout_marginTop="38dp"
+        android:background="@drawable/boton_sin_texto"
+        android:gravity="center_vertical|center_horizontal"
+        android:onClick="salir"
+        android:text="@string/boton_salir"
+        android:textAppearance="?android:attr/textAppearanceMediumInverse"
+        android:textColor="#FFFFFF"
+        android:textSize="21sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

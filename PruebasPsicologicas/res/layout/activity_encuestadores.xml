@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/fondo_azul_solo"
+    android:scrollbars="vertical"
+    tools:context=".pantallas.TabletaBuscarEncuestadora"
+    tools:ignore="HardcodedText,ContentDescription" >
+
+    <TextView
+        android:id="@+id/texto_buscar_encuestadora"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="00dp"
+        android:text="@string/texto_buscar_encuestadora"
+        android:textColor="#00FF00"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+	<GridView android:id="@+id/galeria"
+    	android:layout_width="fill_parent" 
+    	android:layout_height="700dp"
+        android:layout_below="@+id/texto_buscar_encuestadora"
+        android:layout_marginTop="20dp"
+    	android:columnWidth="90dp"
+    	android:numColumns="5"
+    	android:verticalSpacing="10dp"
+    	android:horizontalSpacing="10dp"
+    	android:stretchMode="columnWidth"
+    	android:gravity="center" />
+
+	<ImageButton
+        android:id="@+id/botonFlechaIzquierda"
+        android:layout_width="65dp"
+        android:layout_height="43dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="20dp"
+        android:onClick="ventanaAnterior"
+        android:src="@drawable/boton_flecha_izquierda" />
+
+    <TextView
+        android:id="@+id/monitor_01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/botonFlechaIzquierda"
+        android:layout_marginLeft="29dp"
+        android:layout_toRightOf="@+id/botonFlechaIzquierda" />
+
+    <TextView
+        android:id="@+id/monitor_02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/botonFlechaIzquierda"
+        android:layout_marginLeft="29dp"
+        android:layout_toRightOf="@+id/monitor_01" />
+
+</RelativeLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_azul_solo" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="43dp"
+        android:text="@string/Resultado" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="50dp" >
+
+        <RadioButton
+            android:id="@+id/resultadocompleto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/texto_cuestionario_completo" />
+
+        <RadioButton
+            android:id="@+id/resultadoincompleto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/texto_cuestionario_incompleto" />
+
+        <RadioButton
+            android:id="@+id/resultadonegado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/texto_cuestionario_ nocompletado" />
+
+        <RadioButton
+            android:id="@+id/resultadonosabe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/texto_cuestionario_nosabe" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/Terminar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radioGroupResultado"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="75dp"
+        android:text="@string/fin" />
+
+</RelativeLayout>
