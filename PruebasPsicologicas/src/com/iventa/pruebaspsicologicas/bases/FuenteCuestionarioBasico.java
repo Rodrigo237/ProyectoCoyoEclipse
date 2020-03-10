@@ -248,7 +248,7 @@ public class FuenteCuestionarioBasico {
     }
 
     //  TabletaPantalla0100 = 2019-04-20
-    public void checarRegistroPosicionador(String el_campoPosicion) {
+    public void checarRegistroPosicionador() {
     	Cursor cursor = db.rawQuery("SELECT registro FROM posicionador", null);
     	Integer renglones = cursor.getCount();
 
@@ -256,7 +256,6 @@ public class FuenteCuestionarioBasico {
         	db.execSQL("INSERT INTO posicionador (registro) VALUES (null)");
     	}
 
-    	db.execSQL("UPDATE posicionador SET posicion = " + "'" + el_campoPosicion + "'");
     	db.close();
     }
 

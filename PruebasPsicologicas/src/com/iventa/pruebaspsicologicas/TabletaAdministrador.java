@@ -63,7 +63,7 @@ public class TabletaAdministrador extends Activity implements OnClickListener {
 	private Button botonExportarBaseDeDatos;
 	private Button botonEliminarBaseDeDatos;
 	private Button botonEnviarCorreo;
-	private String nombre_del_paquete = "com.iventa.morbilidad";
+	private String nombre_del_paquete = "com.iventa.pruebaspsicologicas";
 	private String importar_base_de_datos = "Importar base de datos";
 	private String exportar_base_de_datos = "Exportar base de datos";
 	private String eliminar_base_de_datos = "Eliminar base de datos";
@@ -513,9 +513,10 @@ public class TabletaAdministrador extends Activity implements OnClickListener {
 
 		String asunto = "Correo de campo: " + nombreArchivoAdjunto + " de " + el_encuesto;
 
-		String[] TO = {"iventa.software@gmail.com, proyecto.coyoacan.2019@gmail.com"};
-		String[] CC = {"iventa@yahoo.com,iventa@hotmail.com"};
-
+		//String[] TO = {"iventa.software@gmail.com, proyecto.coyoacan.2019@gmail.com"};
+		//String[] CC = {"iventa@yahoo.com,iventa@hotmail.com"};
+		String[] TO = {"morenorodrigo541@gmail.com"};
+		String[] CC = {"rodrigodx_237@hotmail.com"};
 		Uri uri = Uri.fromFile(new File(Environment.getExternalStorageDirectory().getAbsolutePath(), archivoAdjunto));
 		Intent emailIntent = new Intent(Intent.ACTION_SEND);
 
