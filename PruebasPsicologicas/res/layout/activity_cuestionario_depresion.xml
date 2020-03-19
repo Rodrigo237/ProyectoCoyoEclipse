@@ -5,14 +5,14 @@
     android:background="@drawable/fondo_azul_solo" >
 
     <RadioGroup
-        android:id="@+id/radioGroupPregunta13"
+        android:id="@+id/radio_13"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/textView1" >
 
         <RadioButton
-            android:id="@+id/rara13"
+            android:id="@+id/radio_13_opcion_01"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:checked="true"
@@ -20,26 +20,25 @@
             android:textSize="14sp" />
 
         <RadioButton
-            android:id="@+id/pocas13"
+            android:id="@+id/radio_13_opcion_02"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/resdep2"
             android:textSize="14sp" />
 
         <RadioButton
-            android:id="@+id/considerable13"
+            android:id="@+id/radio_13_opcion_03"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/resdep3"
             android:textSize="14sp" />
 
         <RadioButton
-            android:id="@+id/todo13"
+            android:id="@+id/radio_13_opcion_04"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/resdep4"
             android:textSize="14sp" />
-
     </RadioGroup>
 
     <TextView
@@ -55,18 +54,18 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
-        android:layout_below="@+id/radioGroupPregunta13"
+        android:layout_below="@+id/radio_13"
         android:text="@string/pdep2" />
 
     <RadioGroup
-        android:id="@+id/RadioGroupPregunta14"
+        android:id="@+id/radio_14"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/textView2" >
 
         <RadioButton
-            android:id="@+id/rara14"
+            android:id="@+id/radio_14_opcion_01"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:checked="true"
@@ -74,26 +73,25 @@
             android:textSize="14sp" />
 
         <RadioButton
-            android:id="@+id/pocas14"
+            android:id="@+id/radio_14_opcion_02"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/resdep2"
             android:textSize="14sp" />
 
         <RadioButton
-            android:id="@+id/considerable14"
+            android:id="@+id/radio_14_opcion_03"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/resdep3"
             android:textSize="14sp" />
 
         <RadioButton
-            android:id="@+id/todo14"
+            android:id="@+id/radio_14_opcion_04"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/resdep4"
             android:textSize="14sp" />
-
     </RadioGroup>
 
     <TextView
@@ -101,60 +99,64 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
-        android:layout_below="@+id/RadioGroupPregunta14"
+        android:layout_below="@+id/radio_14"
         android:text="@string/pdep3" />
 
-    <RadioGroup
-        android:id="@+id/RadioGroupPregunta15"
+      <RadioGroup
+        android:id="@+id/radio_15"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView3"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true" >
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView3" >
 
         <RadioButton
-            android:id="@+id/rara15"
+            android:id="@+id/radio_15_opcion_01"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:checked="true"
-            android:text="@string/resdep1" />
+            android:text="@string/resdep1"
+            android:textSize="14sp" />
 
         <RadioButton
-            android:id="@+id/pocas15"
+            android:id="@+id/radio_15_opcion_02"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/resdep2" />
+            android:text="@string/resdep2"
+            android:textSize="14sp" />
 
         <RadioButton
-            android:id="@+id/considerable15"
+            android:id="@+id/radio_15_opcion_03"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/resdep3" />
+            android:text="@string/resdep3"
+            android:textSize="14sp" />
 
         <RadioButton
-            android:id="@+id/todo15"
+            android:id="@+id/radio_15_opcion_04"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/resdep4" />
+            android:text="@string/resdep4"
+            android:textSize="14sp" />
     </RadioGroup>
     
-     <TextView
-         android:id="@+id/textView4"
-         android:layout_width="wrap_content"
-         android:layout_height="wrap_content"
-         android:layout_alignParentLeft="true"
-         android:layout_below="@+id/RadioGroupPregunta15"
-         android:text="@string/pdep4" />
-     
-       <RadioGroup
-        android:id="@+id/RadioGroupPregunta16"
+    
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/radio_15"
+        android:text="@string/pdep4" />
+
+    <RadioGroup
+        android:id="@+id/radio_16"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/textView4" >
 
         <RadioButton
-            android:id="@+id/rara16"
+            android:id="@+id/radio_16_opcion_01"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:checked="true"
@@ -162,45 +164,44 @@
             android:textSize="14sp" />
 
         <RadioButton
-            android:id="@+id/pocas16"
+            android:id="@+id/radio_16_opcion_02"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/resdep2"
             android:textSize="14sp" />
 
         <RadioButton
-            android:id="@+id/considerable16"
+            android:id="@+id/radio_16_opcion_03"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/resdep3"
             android:textSize="14sp" />
 
         <RadioButton
-            android:id="@+id/todo16"
+            android:id="@+id/radio_16_opcion_04"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/resdep4"
             android:textSize="14sp" />
-
     </RadioGroup>
-     
-         <TextView
-             android:id="@+id/textView5"
-             android:layout_width="wrap_content"
-             android:layout_height="wrap_content"
-             android:layout_alignParentLeft="true"
-             android:layout_below="@+id/RadioGroupPregunta16"
-             android:text="@string/pdep5" />
-     
-          <RadioGroup
-        android:id="@+id/RadioGroupPregunta17"
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/radio_16"
+        android:text="@string/pdep5" />
+
+    <RadioGroup
+        android:id="@+id/radio_17"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/textView5" >
 
         <RadioButton
-            android:id="@+id/rara17"
+            android:id="@+id/radio_17_opcion_01"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:checked="true"
@@ -208,45 +209,44 @@
             android:textSize="14sp" />
 
         <RadioButton
-            android:id="@+id/pocas17"
+            android:id="@+id/radio_17_opcion_02"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/resdep2"
             android:textSize="14sp" />
 
         <RadioButton
-            android:id="@+id/considerable17"
+            android:id="@+id/radio_17_opcion_03"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/resdep3"
             android:textSize="14sp" />
 
         <RadioButton
-            android:id="@+id/todo17"
+            android:id="@+id/radio_17_opcion_04"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/resdep4"
             android:textSize="14sp" />
-
     </RadioGroup>
-         
-           <TextView
-               android:id="@+id/textView6"
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content"
-               android:layout_alignParentLeft="true"
-               android:layout_below="@+id/RadioGroupPregunta17"
-               android:text="@string/pdep6" />
-           
-               <RadioGroup
-        android:id="@+id/RadioGroupPregunta18"
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/radio_17"
+        android:text="@string/pdep6" />
+
+    <RadioGroup
+        android:id="@+id/radio_18"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/textView6" >
 
         <RadioButton
-            android:id="@+id/rara18"
+            android:id="@+id/radio_18_opcion_01"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:checked="true"
@@ -254,45 +254,44 @@
             android:textSize="14sp" />
 
         <RadioButton
-            android:id="@+id/pocas18"
+            android:id="@+id/radio_18_opcion_02"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/resdep2"
             android:textSize="14sp" />
 
         <RadioButton
-            android:id="@+id/considerable18"
+            android:id="@+id/radio_18_opcion_03"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/resdep3"
             android:textSize="14sp" />
 
         <RadioButton
-            android:id="@+id/todo18"
+            android:id="@+id/radio_18_opcion_04"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/resdep4"
             android:textSize="14sp" />
-
     </RadioGroup>
-          
-      <TextView
-          android:id="@+id/textView7"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:layout_alignParentLeft="true"
-          android:layout_below="@+id/RadioGroupPregunta18"
-          android:text="@string/pdep7" />
-      
-      <RadioGroup
-        android:id="@+id/RadioGroupPregunta19"
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/radio_18"
+        android:text="@string/pdep7" />
+
+    <RadioGroup
+        android:id="@+id/radio_19"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/textView7" >
 
         <RadioButton
-            android:id="@+id/rara19"
+            android:id="@+id/radio_19_opcion_01"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:checked="true"
@@ -300,45 +299,43 @@
             android:textSize="14sp" />
 
         <RadioButton
-            android:id="@+id/pocas19"
+            android:id="@+id/radio_19_opcion_02"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/resdep2"
             android:textSize="14sp" />
 
         <RadioButton
-            android:id="@+id/considerable19"
+            android:id="@+id/radio_19_opcion_03"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/resdep3"
             android:textSize="14sp" />
 
         <RadioButton
-            android:id="@+id/todo19"
+            android:id="@+id/radio_19_opcion_04"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/resdep4"
             android:textSize="14sp" />
-
     </RadioGroup>
 
-      <Button
-          android:id="@+id/siguiente_depresion_button"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:layout_alignParentLeft="true"
-          android:layout_alignTop="@+id/textView3"
-          android:layout_marginLeft="18dp"
-          android:layout_below = "@+id/RadioGroupPregunta19" 
-          android:text="@string/siguiente" />
+    <Button
+        android:id="@+id/abortar_depresion_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/textView1"
+        android:layout_below="@+id/radio_19"
+        android:text="@string/Abortar" />
 
-      <Button
-          android:id="@+id/abortar_depresion_button"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:layout_below="@+id/RadioGroupPregunta19"
-          android:layout_marginLeft="55dp"
-          android:layout_toRightOf="@+id/siguiente_depresion_button"
-          android:text="@string/Abortar" />
-      
+    <Button
+        android:id="@+id/siguiente_depresion_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/abortar_depresion_button"
+        android:layout_alignBottom="@+id/abortar_depresion_button"
+        android:layout_alignRight="@+id/textView7"
+        android:layout_marginRight="119dp"
+        android:text="@string/siguiente" />
+
 </RelativeLayout>

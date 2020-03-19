@@ -1,20 +1,18 @@
 package com.iventa.pruebaspsicologicas;
 
+import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.app.Activity;
-import android.content.Intent;
+import android.widget.GridView;
 
 import com.iventa.pruebaspsicologicas.bases.FuenteCuestionarioBasico;
 import com.iventa.pruebaspsicologicas.bases.FuenteCuestionarioIndividual;
 import com.iventa.pruebaspsicologicas.R;
 
-
+@SuppressWarnings("unused")
 public class MainActivity extends Activity {
-
-	//Variables
-
 
     private FuenteCuestionarioIndividual fuenteDeCuestionarioIndividual; 
     private FuenteCuestionarioBasico fuenteDeCuestionarioBasico;
@@ -27,8 +25,6 @@ public class MainActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-		
-		//Declaracion
 
 		fuenteDeCuestionarioIndividual = new FuenteCuestionarioIndividual(this);
 		fuenteDeCuestionarioBasico = new FuenteCuestionarioBasico(this);
@@ -40,15 +36,15 @@ public class MainActivity extends Activity {
 		fuenteDeCuestionarioBasico.checarRegistroPosicionador();
 
 		cantidad_de_registros();
-		
 	}
+
 	private void cantidad_de_registros(){
 		fuenteDeCuestionarioIndividual.open(); 
 		cantidad_de_registros_en_individual = fuenteDeCuestionarioIndividual.cuentaRegistrosEnIndividual(); 
 
 		if (cantidad_de_registros_en_individual == 0) {
 			botonBuscarProspectos.setEnabled(false);
-			botonBuscarProspectos.setText("Archivo de prospectos vacío");
+			botonBuscarProspectos.setText("Archivo de prospectos vacï¿½o");
 		}
 
 		if (cantidad_de_registros_en_individual > 0) {
@@ -61,7 +57,7 @@ public class MainActivity extends Activity {
 
 		if (cantidad_de_registros_en_basico == 0) {
 			botonBuscarCuestionario.setEnabled(false);
-			botonBuscarCuestionario.setText("Archivo de cuestionarios vacío");
+			botonBuscarCuestionario.setText("Archivo de cuestionarios vacï¿½o");
 		}
 
 		if (cantidad_de_registros_en_basico > 0) {
@@ -91,5 +87,5 @@ public class MainActivity extends Activity {
 		a.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 		startActivity(a);
 	}
-
 }
+

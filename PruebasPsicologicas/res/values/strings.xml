@@ -224,7 +224,7 @@
 	<string name="texto_cuestionario_completo">Cuestionario Completado</string>
 	<string name="texto_cuestionario_incompleto">Cuestionario Incompleto: Se empezó la herramienta de evaluación,
 	    pero el entrevistado se negó a llevarlo a continuarlo o un factor externo impidió su finalización.</string>
-	<string name="texto_cuestionario_ nocompletado">Se negó a contestar el cuestionario: el entrevistado no quiso contestar las
+	<string name="texto_cuestionario_negativo">Se negó a contestar el cuestionario: el entrevistado no quiso contestar las
 	    preguntas del cuestionario. </string>
 	<string name="texto_cuestionario_nosabe">No sabe / No responde.</string>
 </resources>

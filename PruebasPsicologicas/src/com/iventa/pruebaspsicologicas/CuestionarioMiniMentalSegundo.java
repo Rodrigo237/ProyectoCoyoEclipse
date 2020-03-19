@@ -7,6 +7,7 @@ import com.iventa.pruebaspsicologicas.bases.FuenteCuestionarioBasico;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.CheckBox;
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -14,63 +15,132 @@ import android.content.Intent;
 
 
 
-@SuppressLint("SimpleDateFormat")
+@SuppressLint({ "SimpleDateFormat", "Registered" })
 public class CuestionarioMiniMentalSegundo extends Activity{
 	
-    CheckBox Pregunta46,Pregunta47R1,Pregunta47R2,Pregunta47R3;
-    CheckBox  Pregunta48,Pregunta49,Pregunta50;
-    
+  //  CheckBox Pregunta46,Pregunta47R1,Pregunta47R2,Pregunta47R3;
+  //  CheckBox  Pregunta48,Pregunta49,Pregunta50;
+    private CheckBox checkbox_46;
+    private int seleccion_46 = 0;
+    private String tiempo_46; 
+    private CheckBox checkbox_47_01;
+    private int seleccion_47_01 = 0;
+    private String tiempo_47_01; 
+    private CheckBox checkbox_47_02;
+    private int seleccion_47_02 = 0;
+    private String tiempo_47_02; 
+    private CheckBox checkbox_47_03;
+    private int seleccion_47_03 = 0;
+    private String tiempo_47_03; 
+    private CheckBox checkbox_48;
+    private int seleccion_48 = 0;
+    private String tiempo_48; 
+    private CheckBox checkbox_49;
+    private int seleccion_49 = 0;
+    private String tiempo_49;
+    private CheckBox checkbox_50;
+    private int seleccion_50 = 0;
+    private String tiempo_50; 
     FuenteCuestionarioBasico fuenteCuestionarioBasico;
 
     private String el_registro;
     private static String la_tableta;
     private static String el_encuesto;
-    private String seleccion_fecha;
-    private String seleccion_hora_ini;
-    private String seleccion_fechor_ini;
-    private  String la_cadena;
-    private String el_municipio;
-    private String el_ageb;
-    private String la_area;
-    private String la_manzana;
-    private String la_vivienda;
-    private String el_nombre;
-    private String el_paterno;
-    private String el_materno;
-    private String el_sexo;
-    private String la_edad;
-    private String la_edad_hoy;
-    private int seleccion_01;
-    private String tiempo_01;
-    private int seleccion_02R1;
-    private String tiempo_02R1;
-    private int seleccion_02R2;
-    private String tiempo_02R2;
-    private int seleccion_02R3;
-    private String tiempo_02R3;
-    private int seleccion_03;
-    private String tiempo_03;
-    private int seleccion_04;
-    private String tiempo_04;
-    private int seleccion_05;
-    private String tiempo_05;
+  
+    private Button btn_finalizar;
+    private Button btn_abortar_mini_segundo;
+    
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_mini_mental_segundo);
 		
 		Date date = new Date();
-        seleccion_fecha = "'" + new SimpleDateFormat("yyyy-MM-dd").format(date.getTime()) + "'";
-        seleccion_hora_ini = "'" + new SimpleDateFormat("HH:mm:ss").format(date.getTime()) + "'";
+   //     seleccion_fecha = "'" + new SimpleDateFormat("yyyy-MM-dd").format(date.getTime()) + "'";
+     //   seleccion_hora_ini = "'" + new SimpleDateFormat("HH:mm:ss").format(date.getTime()) + "'";
 		
-			Pregunta46 = (CheckBox)findViewById(R.id.checkBox46);
-	        Pregunta47R1 = (CheckBox)findViewById(R.id.checkBox47R1);
-	        Pregunta47R2 = (CheckBox)findViewById(R.id.checkBox47R2);
-	        Pregunta47R3 = (CheckBox)findViewById(R.id.checkBox47R3);
-	        Pregunta48 = (CheckBox)findViewById(R.id.checkBox48);
-	        Pregunta49 = (CheckBox)findViewById(R.id.checkBox49);
-	        Pregunta50 = (CheckBox)findViewById(R.id.checkBox50);
+        	checkbox_46 = (CheckBox)findViewById(R.id.checkBox46);
+        	checkbox_47_01 = (CheckBox)findViewById(R.id.checkBox47_opcion_01);
+        	checkbox_47_02 = (CheckBox)findViewById(R.id.checkBox47_opcion_02);
+        	checkbox_47_03 = (CheckBox)findViewById(R.id.checkBox47_opcion_03);
+        	checkbox_48 = (CheckBox)findViewById(R.id.checkBox48);
+        	checkbox_49 = (CheckBox)findViewById(R.id.checkBox49);
+        	checkbox_50 = (CheckBox)findViewById(R.id.checkBox50);
 	        
+        	btn_finalizar =  (Button)findViewById(R.id.btn_finalizar);
+            btn_abortar_mini_segundo =  (Button)findViewById(R.id.btn_abortar_mini_segundo);
+	        
+	        if (checkbox_46.isChecked())
+	        {
+	            seleccion_46 = 1;
+	            tiempo_46 = me_das_tu_ora();
+	        }else if (!checkbox_46.isChecked())
+	        {
+	            seleccion_46 = 0;
+	            tiempo_46 = me_das_tu_ora();
+	        }
+
+	        if (checkbox_47_01.isChecked())
+	        {
+	            seleccion_47_01 = 1;
+	            tiempo_47_01 = me_das_tu_ora();
+	        }else if (!checkbox_47_01.isChecked())
+	        {
+	            seleccion_47_01 = 0;
+	            tiempo_47_01 = me_das_tu_ora();
+	        }
+
+	        if (checkbox_47_02.isChecked())
+	        {
+	            seleccion_47_02 = 1;
+	            tiempo_47_02 = me_das_tu_ora();
+	        }else if (!checkbox_47_02.isChecked())
+	        {
+	            seleccion_47_02 = 0;
+	            tiempo_47_02 = me_das_tu_ora();
+	        }
+
+	        if (checkbox_47_03.isChecked())
+	        {
+	            seleccion_47_03 = 1;
+	            tiempo_47_03 = me_das_tu_ora();
+	        }else if (!checkbox_47_03.isChecked())
+	        {
+	            seleccion_47_03 = 0;
+	            tiempo_47_03 = me_das_tu_ora();
+	        }
+
+	        if (checkbox_48.isChecked())
+	        {
+	            seleccion_48 = 1;
+	            tiempo_48 = me_das_tu_ora();
+	        }else if (!checkbox_48.isChecked())
+	        {
+	            seleccion_48 = 0;
+	            tiempo_48 = me_das_tu_ora();
+	        }
+	        if (checkbox_49.isChecked())
+	        {
+	            seleccion_49 = 1;
+	            tiempo_49 = me_das_tu_ora();
+	        }else if (!checkbox_49.isChecked())
+	        {
+	            seleccion_49 = 0;
+	            tiempo_49 = me_das_tu_ora();
+	        }
+	        if (checkbox_50.isChecked())
+	        {
+	            seleccion_50 = 1;
+	            tiempo_50 = me_das_tu_ora();
+	        }else if (!checkbox_50.isChecked())
+	        {
+	            seleccion_50 = 0;
+	            tiempo_50 = me_das_tu_ora();
+	        }
+	        
+	        fuenteCuestionarioBasico = new FuenteCuestionarioBasico(this);
+	        fuenteCuestionarioBasico.open();
+
 	        String comando_00 = "SELECT registro, tableta, encuesto FROM posicionador";
 	        String el_registro_leido[] = fuenteCuestionarioBasico.tomarEncuesto(comando_00);
 	        if (el_registro_leido[0] != null) {
@@ -92,125 +162,101 @@ public class CuestionarioMiniMentalSegundo extends Activity{
 	            }
 	        }
 
-	        String comando_1 = "SELECT registro, " +
-	                "municipio, ageb, area, manzana, vivienda, " +
-	                "nombre, paterno, materno, " +
-	                "sexo, edad, edad_hoy, " +
-	                "encuesto " +
+	        String comando_1 = "SELECT p_4601, " +
+	                "p_4701, p_4702, p_4703, p_4801, p_4901, " +
+	                "p_5001 " +
 	                "FROM cuestionariobasico " +
 	                "WHERE registro = " + "'" + el_registro + "'";
 
 	        final String matriz[] = fuenteCuestionarioBasico.abrirCaptura_0207(comando_1);
-	        el_registro =				matriz[0].toString();
-	        el_municipio =              matriz[1].toString();
-	        el_ageb	=           		matriz[2].toString();
-	        la_area =       			matriz[3].toString();
-	        la_manzana =		        matriz[4].toString();
-	        la_vivienda =       		matriz[5].toString();
-	        el_nombre =         		matriz[6].toString();
-	        el_paterno =        		matriz[7].toString();
-	        el_materno =        		matriz[8].toString();
-	        el_sexo =       			matriz[9].toString();
-	        la_edad   =             	matriz[10].toString();
-	        la_edad_hoy =           	matriz[11].toString();
-	        
-	        if (Pregunta46.isChecked())
-	        {
-	            matriz[12] = "1";
-	            matriz[13] = me_das_tu_ora();
-	            seleccion_01 = 1;
-	            tiempo_01 = me_das_tu_ora();
-	        }else if (!Pregunta46.isChecked())
-	        {
-	            matriz[12] = "0";
-	            matriz[13] = me_das_tu_ora();
-	            seleccion_01 = 0;
-	            tiempo_01 = me_das_tu_ora();
-	        }
+	        fuenteCuestionarioBasico.close();
+     if((matriz[0] != null)&& (matriz[1] != null)&&(matriz[2] != null)&&(matriz[3] != null)&&
+     		(matriz[4] != null)&& (matriz[5] != null)&& (matriz[6] != null))
+     {
+    	 	Integer valor_4601 = Integer.valueOf(matriz[0].toString());
+        	Integer valor_4701 = Integer.valueOf(matriz[1].toString());
+        	Integer valor_4702 = Integer.valueOf(matriz[2].toString());
+        	Integer valor_4703 = Integer.valueOf(matriz[3].toString());
+        	Integer valor_4801 = Integer.valueOf(matriz[4].toString());
+        	Integer valor_4901 = Integer.valueOf(matriz[5].toString());
+        	Integer valor_5001 = Integer.valueOf(matriz[6].toString());
 
-	        if (Pregunta47R1.isChecked())
-	        {
-	            matriz[14] = "1";
-	            matriz[15] = me_das_tu_ora();
-	            seleccion_02R1 = 1;
-	            tiempo_02R1 = me_das_tu_ora();
-	        }else if (!Pregunta47R1.isChecked())
-	        {
-	            matriz[14] = "0";
-	            matriz[15] = me_das_tu_ora();
-	            seleccion_02R1 = 0;
-	            tiempo_02R1 = me_das_tu_ora();
-	        }
-
-	        if (Pregunta47R2.isChecked())
-	        {
-	            matriz[16] = "1";
-	            matriz[17] = me_das_tu_ora();
-	            seleccion_02R2 = 1;
-	            tiempo_02R2 = me_das_tu_ora();
-	        }else if (!Pregunta47R2.isChecked())
-	        {
-	            matriz[16] = "0";
-	            matriz[17] = me_das_tu_ora();
-	            seleccion_02R2 = 0;
-	            tiempo_02R2 = me_das_tu_ora();
-	        }
-
-	        if (Pregunta47R3.isChecked())
-	        {
-	            matriz[18] = "1";
-	            matriz[19] = me_das_tu_ora();
-	            seleccion_02R3 = 1;
-	            tiempo_02R3 = me_das_tu_ora();
-	        }else if (!Pregunta47R3.isChecked())
-	        {
-	            matriz[18] = "0";
-	            matriz[19] = me_das_tu_ora();
-	            seleccion_02R3 = 0;
-	            tiempo_02R3 = me_das_tu_ora();
-	        }
-
-	        if (Pregunta48.isChecked())
-	        {
-	            matriz[20] = "1";
-	            matriz[21] = me_das_tu_ora();
-	            seleccion_03 = 1;
-	            tiempo_03 = me_das_tu_ora();
-	        }else if (!Pregunta48.isChecked())
-	        {
-	            matriz[20] = "0";
-	            matriz[21] = me_das_tu_ora();
-	            seleccion_03 = 0;
-	            tiempo_03 = me_das_tu_ora();
-	        }
-	        if (Pregunta49.isChecked())
-	        {
-	            matriz[22] = "1";
-	            matriz[23] = me_das_tu_ora();
-	            seleccion_04 = 1;
-	            tiempo_04 = me_das_tu_ora();
-	        }else if (!Pregunta49.isChecked())
-	        {
-	            matriz[22] = "0";
-	            matriz[23] = me_das_tu_ora();
-	            seleccion_04 = 0;
-	            tiempo_04 = me_das_tu_ora();
-	        }
-	        if (Pregunta50.isChecked())
-	        {
-	            matriz[24] = "1";
-	            matriz[25] = me_das_tu_ora();
-	            seleccion_05 = 1;
-	            tiempo_05 = me_das_tu_ora();
-	        }else if (!Pregunta50.isChecked())
-	        {
-	            matriz[24] = "0";
-	            matriz[25] = me_das_tu_ora();
-	            seleccion_05 = 0;
-	            tiempo_05 = me_das_tu_ora();
-	        }
-
-	}
+        	if(valor_4601 == 0){
+           		seleccion_46 = valor_4601;
+           		checkbox_46.setChecked(false);
+           	}else if(valor_4601 == 1)
+           	{
+           		seleccion_46 = valor_4601;
+           		checkbox_46.setChecked(true);           		
+           	}
+        	
+        	if(valor_4701 == 0){
+           		seleccion_47_01 = valor_4701;
+           		checkbox_47_01.setChecked(false);
+           	}else if(valor_4701 == 1)
+           	{
+           		seleccion_47_01 = valor_4701;
+           		checkbox_47_01.setChecked(true);           		
+           	}
+        	if(valor_4702 == 0){
+           		seleccion_47_02 = valor_4702;
+           		checkbox_47_02.setChecked(false);
+           	}else if(valor_4702 == 1)
+           	{
+           		seleccion_47_02 = valor_4702;
+           		checkbox_47_02.setChecked(true);           		
+           	}
+        	if(valor_4703 == 0){
+           		seleccion_47_03 = valor_4703;
+           		checkbox_47_03.setChecked(false);
+           	}else if(valor_4703 == 1)
+           	{
+           		seleccion_47_03 = valor_4703;
+           		checkbox_47_03.setChecked(true);           		
+           	}
+        	
+        	if(valor_4801 == 0){
+           		seleccion_48 = valor_4801;
+           		checkbox_48.setChecked(false);
+           	}else if(valor_4801 == 1)
+           	{
+           		seleccion_48 = valor_4801;
+           		checkbox_48.setChecked(true);           		
+           	}
+        	if(valor_4901 == 0){
+           		seleccion_49 = valor_4901;
+           		checkbox_49.setChecked(false);
+           	}else if(valor_4901 == 1)
+           	{
+           		seleccion_49 = valor_4901;
+           		checkbox_49.setChecked(true);           		
+           	}
+        	if(valor_5001 == 0){
+           		seleccion_50 = valor_5001;
+           		checkbox_50.setChecked(false);
+           	}else if(valor_5001 == 1)
+           	{
+           		seleccion_50 = valor_5001;
+           		checkbox_50.setChecked(true);           		
+           	}
+     }
+     
+     btn_finalizar.setOnClickListener(new View.OnClickListener() {
+		
+		public void onClick(View view) {
+			// TODO Auto-generated method stub
+			miniMentalFinalizar(view);
+		}
+	});
+     btn_abortar_mini_segundo.setOnClickListener(new View.OnClickListener() {
+		
+		public void onClick(View view) {
+			// TODO Auto-generated method stub
+			miniMentalAbortarSegundo(view);
+		}
+	});
+     
+}
 	
 	public void miniMentalFinalizar(View view)
     {
@@ -218,38 +264,38 @@ public class CuestionarioMiniMentalSegundo extends Activity{
         fuenteCuestionarioBasico = new FuenteCuestionarioBasico(this);
         fuenteCuestionarioBasico.open();
         String comando_00 = "UPDATE cuestionariobasico SET";
-        String comando_01 = ", mi_17";
-        String comando_02 = ", tmi_17";
-        String comando_03 = "mi_18r1";
-        String comando_04 = "tmi_18r1";
-        String comando_05 = "mi_18r2";
-        String comando_06 = "tmi_18r2";
-        String comando_07 = "mi_18r3";
-        String comando_08 = "tmi_18r3";
-        String comando_09 = ", mi_19";
-        String comando_10 = ", tmi_19";
-        String comando_11 = ", mi_20";
-        String comando_12 = ", tmi_20";
-        String comando_13 = ", mi_21";
-        String comando_14 = ", tmi_21";
+        String comando_01 = ", p_4601";
+        String comando_02 = ", t_4601";
+        String comando_03 = "p_4701";
+        String comando_04 = "t_4701";
+        String comando_05 = "p_4702";
+        String comando_06 = "t_4702";
+        String comando_07 = "p_4703";
+        String comando_08 = "t_4703";
+        String comando_09 = ", p_4801";
+        String comando_10 = ", t_4801";
+        String comando_11 = ", p_4901";
+        String comando_12 = ", t_4901";
+        String comando_13 = ", p_5001";
+        String comando_14 = ", t_5001";
         String comando_50 = " WHERE registro = " + "'" + el_registro + "'";
 
         
         fuenteCuestionarioBasico.guardarCaptura_0207(comando_00,
-                comando_01, seleccion_01,
-                comando_02, tiempo_01,
-                comando_03, seleccion_02R1,
-                comando_04, tiempo_02R1,
-                comando_05, seleccion_02R2,
-                comando_06, tiempo_02R2,
-                comando_07, seleccion_02R3,
-                comando_08, tiempo_02R3,
-                comando_09, seleccion_03,
-                comando_10, tiempo_03,
-                comando_11, seleccion_04,
-                comando_12, tiempo_04,
-                comando_13, seleccion_05,
-                comando_14, tiempo_05,
+                comando_01, seleccion_46,
+                comando_02, tiempo_46,
+                comando_03, seleccion_47_01,
+                comando_04, tiempo_47_01,
+                comando_05, seleccion_47_02,
+                comando_06, tiempo_47_02,
+                comando_07, seleccion_47_03,
+                comando_08, tiempo_47_03,
+                comando_09, seleccion_48,
+                comando_10, tiempo_48,
+                comando_11, seleccion_49,
+                comando_12, tiempo_49,
+                comando_13, seleccion_50,
+                comando_14, tiempo_50,
                 comando_50);
         startActivity(miniFinalizar);
     }
@@ -260,38 +306,38 @@ public class CuestionarioMiniMentalSegundo extends Activity{
         fuenteCuestionarioBasico = new FuenteCuestionarioBasico(this);
         fuenteCuestionarioBasico.open();
         String comando_00 = "UPDATE cuestionariobasico SET";
-        String comando_01 = ", mi_17";
-        String comando_02 = ", tmi_17";
-        String comando_03 = "mi_18r1";
-        String comando_04 = "tmi_18r1";
-        String comando_05 = "mi_18r2";
-        String comando_06 = "tmi_18r2";
-        String comando_07 = "mi_18r3";
-        String comando_08 = "tmi_18r3";
-        String comando_09 = ", mi_19";
-        String comando_10 = ", tmi_19";
-        String comando_11 = ", mi_20";
-        String comando_12 = ", tmi_20";
-        String comando_13 = ", mi_21";
-        String comando_14 = ", tmi_21";
+        String comando_01 = ", p_4601";
+        String comando_02 = ", t_4601";
+        String comando_03 = "p_4701";
+        String comando_04 = "t_4701";
+        String comando_05 = "p_4702";
+        String comando_06 = "t_4702";
+        String comando_07 = "p_4703";
+        String comando_08 = "t_4703";
+        String comando_09 = ", p_4801";
+        String comando_10 = ", t_4801";
+        String comando_11 = ", p_4901";
+        String comando_12 = ", t_4901";
+        String comando_13 = ", p_5001";
+        String comando_14 = ", t_5001";
         String comando_50 = " WHERE registro = " + "'" + el_registro + "'";
 
         
         fuenteCuestionarioBasico.guardarCaptura_0207(comando_00,
-                comando_01, seleccion_01,
-                comando_02, tiempo_01,
-                comando_03, seleccion_02R1,
-                comando_04, tiempo_02R1,
-                comando_05, seleccion_02R2,
-                comando_06, tiempo_02R2,
-                comando_07, seleccion_02R3,
-                comando_08, tiempo_02R3,
-                comando_09, seleccion_03,
-                comando_10, tiempo_03,
-                comando_11, seleccion_04,
-                comando_12, tiempo_04,
-                comando_13, seleccion_05,
-                comando_14, tiempo_05,
+        		 comando_01, seleccion_46,
+                 comando_02, tiempo_46,
+                 comando_03, seleccion_47_01,
+                 comando_04, tiempo_47_01,
+                 comando_05, seleccion_47_02,
+                 comando_06, tiempo_47_02,
+                 comando_07, seleccion_47_03,
+                 comando_08, tiempo_47_03,
+                 comando_09, seleccion_48,
+                 comando_10, tiempo_48,
+                 comando_11, seleccion_49,
+                 comando_12, tiempo_49,
+                 comando_13, seleccion_50,
+                 comando_14, tiempo_50,
                 comando_50);
         startActivity(miniFinalizarAbortar);
     }

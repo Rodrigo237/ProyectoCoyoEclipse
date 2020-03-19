@@ -22,6 +22,7 @@ import android.widget.TextView;
 
 import com.iventa.pruebaspsicologicas.bases.FuenteCuestionarioBasico;
 import com.iventa.pruebaspsicologicas.clases.ClasesIndividual;
+import com.iventa.pruebaspsicologicas.R;
 
 @SuppressWarnings("unused")
 public class TabletaBuscarCuestionario extends Activity implements OnItemClickListener { 
@@ -409,7 +410,7 @@ public class TabletaBuscarCuestionario extends Activity implements OnItemClickLi
 		fuenteDeCuestionarioBasico.open(); 
 
         comando_SQL = "SELECT registro, cadena, municipio, ageb, area, manzana, vivienda, " +
-        						"nombre, paterno, materno, sexo, edad, edad_hoy, p72, p_0815, p_999 " +
+        						"nombre, paterno, materno, sexo, edad, edad_hoy, p72, p_0815 " +
         						"FROM cuestionariobasico";
 
         if (caja_ocultar.isChecked()) {
@@ -436,7 +437,7 @@ public class TabletaBuscarCuestionario extends Activity implements OnItemClickLi
         campo_materno	= campoMaterno.getText().toString();
 
         comando_SQL = "SELECT registro, cadena, municipio, ageb, area, manzana, vivienda, " +
-        						"nombre, paterno, materno, sexo, edad, edad_hoy, p72, p_0815, p_999 " +
+        						"nombre, paterno, materno, sexo, edad, edad_hoy, p72, p_0815 " +
         						"FROM cuestionariobasico WHERE ";
 
         if (campo_municipio.length() > 0) {
@@ -522,8 +523,25 @@ public class TabletaBuscarCuestionario extends Activity implements OnItemClickLi
     	String comando_0 = "SELECT p_0101 FROM cuestionariobasico WHERE registro = " + "'" + el_registro + "'";
 		String identificacion[] = fuenteDeCuestionarioBasico.iniciarCuestionario(comando_0);
 
-		Intent i = new Intent(TabletaBuscarCuestionario.this, CuestionarioSeleccion.class);
-		startActivity(i);
+		Intent i = null;
+
+		if (identificacion[0] == null) {
+			i = new Intent(TabletaBuscarCuestionario.this, CuestionarioSeleccion.class);
+			startActivity(i);
+		}
+
+		if (identificacion[0] != null) {
+			Integer valor_0101 = Integer.valueOf(identificacion[0].toString());
+
+			if (valor_0101 == 1) {
+				i = new Intent(TabletaBuscarCuestionario.this, CuestionarioSeleccion.class);
+				startActivity(i);
+				}
+				else {
+					i = new Intent(TabletaBuscarCuestionario.this, CuestionarioTerminacion.class);
+					startActivity(i);
+			}
+		}
 	} // Fin de continuarCuestionario
 
 	

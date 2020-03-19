@@ -5,7 +5,7 @@
     android:background="@drawable/fondo_azul_solo"
     android:gravity="center_horizontal"
     tools:context=".pantallas.TabletaPantalla0100"
-    tools:ignore="ContentDescription" >
+    tools:ignore="ContentDescription,Overdraw,UnusedResources" >
 
     <TextView
         android:id="@+id/texto_pantalla"

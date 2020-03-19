@@ -595,12 +595,7 @@ public class FuenteCuestionarioBasico {
     	String[] lamatriz = {
     			cursor.getString(0), cursor.getString(1), cursor.getString(2), cursor.getString(3),
     			cursor.getString(4), cursor.getString(5), cursor.getString(6), cursor.getString(7), 
-    			cursor.getString(8), cursor.getString(9), cursor.getString(10), cursor.getString(11),
-    			cursor.getString(12), cursor.getString(13), cursor.getString(14), cursor.getString(15),
-    			cursor.getString(16),cursor.getString(17),cursor.getString(18),cursor.getString(19),
-                cursor.getString(20),cursor.getString(21),cursor.getString(22),cursor.getString(23),
-                cursor.getString(24),cursor.getString(25),cursor.getString(26),cursor.getString(27),
-                cursor.getString(28),cursor.getString(29)
+    			cursor.getString(8)
     	};
 
     	cursor.close(); 
@@ -634,7 +629,7 @@ public class FuenteCuestionarioBasico {
             String comando_20, Integer seleccion_09,
             String comando_21,String tiempo_09,
             String comando_28, String el_encuesto,
-    								String comando_50) {
+    		String comando_50) {
     	db.execSQL(comando_00 +
     			 comando_01 + fecha_01 +
                  comando_02 + hora_01 +
@@ -671,10 +666,7 @@ public class FuenteCuestionarioBasico {
       	cursor.moveToFirst();
 
     	String[] lamatriz = {
-    			cursor.getString(0), cursor.getString(1),cursor.getString(2),cursor.getString(3),
-                cursor.getString(4),cursor.getString(5),cursor.getString(6),cursor.getString(7),
-                cursor.getString(8),cursor.getString(9),cursor.getString(10),cursor.getString(11),
-                cursor.getString(12)
+    			cursor.getString(0), cursor.getString(1),cursor.getString(2)
     	};
 
     	cursor.close(); 
@@ -684,26 +676,20 @@ public class FuenteCuestionarioBasico {
     // TabletaPantalla0102 = 2014-03-29
     // Guardar Pantalla SeleccionSegundo
     public void guardarCaptura_0102(String comando_00,
-    		 String comando_01, String fecha_01,
-             String comando_02, String hora_01,
-             String comando_03, String fechohora_01,
-             String comando_04, Integer seleccion_10,
-             String comando_05, String tiempo_10,
-             String comando_06, Integer seleccion_11,
-             String comando_07, String tiempo_11,
-             String comando_08, Integer seleccion_12,
-             String comando_09, String tiempo_12,
+    		 String comando_01, Integer seleccion_10,
+             String comando_02, String tiempo_10,
+             String comando_03, Integer seleccion_11,
+             String comando_04, String tiempo_11,
+             String comando_05, Integer seleccion_12,
+             String comando_06, String tiempo_12,
     		String comando_50) {
     	db.execSQL(comando_00 +
-    			 comando_01 + fecha_01 +
-                 comando_02 + hora_01 +
-                 comando_03 + fechohora_01 +
-                 comando_04 + seleccion_10 +
-                 comando_05 + tiempo_10 +
-                 comando_06 + seleccion_11 +
-                 comando_07 + tiempo_11 +
-                 comando_08 +seleccion_12 +
-                 comando_09 + tiempo_12 +
+    			 comando_01 + seleccion_10 +
+                 comando_02 + tiempo_10 +
+                 comando_03 + seleccion_11 +
+                 comando_04 + tiempo_11 +
+                 comando_05 + seleccion_12 +
+                 comando_06 + tiempo_12 +
     				comando_50
     				);
 
@@ -718,11 +704,7 @@ public class FuenteCuestionarioBasico {
 
     	String[] lamatriz = {
     			cursor.getString(0), cursor.getString(1), cursor.getString(2), cursor.getString(3),
-    			cursor.getString(4), cursor.getString(5), cursor.getString(6), cursor.getString(7),
-    			cursor.getString(8), cursor.getString(9), cursor.getString(10), cursor.getString(11),
-    		    cursor.getString(12),cursor.getString(13),cursor.getString(14),cursor.getString(15),
-                cursor.getString(16),cursor.getString(17),cursor.getString(18),cursor.getString(19),
-                cursor.getString(20),cursor.getString(21),cursor.getString(22),cursor.getString(23)
+    			cursor.getString(4), cursor.getString(5), cursor.getString(6)
     	};
 
     	cursor.close(); 
@@ -732,36 +714,36 @@ public class FuenteCuestionarioBasico {
     // TabletaPantalla0104 = 2019-06-06
 	//Guardar Cuestionario Depresion
     public void guardarCaptura_0104(String comando_00,
-    		String comando_01, Integer seleccion_01,
-            String comando_02, String tiempo_01,
-            String comando_03, Integer seleccion_02,
-            String comando_04, String tiempo_02,
-            String comando_05, Integer seleccion_03,
-            String comando_06, String tiempo_03,
-            String comando_07, Integer seleccion_04,
-            String comando_08, String tiempo_04,
-            String comando_09, Integer seleccion_05,
-            String comando_10, String tiempo_05,
-            String comando_11, Integer seleccion_06,
-            String comando_12, String tiempo_06,
-            String comando_13, Integer seleccion_07,
-            String comando_14,String tiempo_07,
+    		String comando_01, Integer seleccion_13,
+            String comando_02, String tiempo_13,
+            String comando_03, Integer seleccion_14,
+            String comando_04, String tiempo_14,
+            String comando_05, Integer seleccion_15,
+            String comando_06, String tiempo_15,
+            String comando_07, Integer seleccion_16,
+            String comando_08, String tiempo_16,
+            String comando_09, Integer seleccion_17,
+            String comando_10, String tiempo_17,
+            String comando_11, Integer seleccion_18,
+            String comando_12, String tiempo_18,
+            String comando_13, Integer seleccion_19,
+            String comando_14,String tiempo_19,
     		String comando_50) {
     	db.execSQL(comando_00 +
-    			  comando_01 + seleccion_01 +
-                  comando_02 + tiempo_01 +
-                  comando_03 + seleccion_02 +
-                  comando_04 + tiempo_02 +
-                  comando_05 +seleccion_03 +
-                  comando_06 + tiempo_03 +
-                  comando_07 +seleccion_04 +
-                  comando_08 +tiempo_04 +
-                  comando_09 + seleccion_05 +
-                  comando_10 +tiempo_05 +
-                  comando_11 +seleccion_06 +
-                  comando_12 +tiempo_06 +
-                  comando_13 + seleccion_07 +
-                  comando_14 + tiempo_07 +
+    			  comando_01 + seleccion_13 +
+                  comando_02 + tiempo_13 +
+                  comando_03 + seleccion_14 +
+                  comando_04 + tiempo_14 +
+                  comando_05 +seleccion_15 +
+                  comando_06 + tiempo_15 +
+                  comando_07 +seleccion_16 +
+                  comando_08 +tiempo_16 +
+                  comando_09 + seleccion_17 +
+                  comando_10 +tiempo_17 +
+                  comando_11 +seleccion_18 +
+                  comando_12 +tiempo_18 +
+                  comando_13 + seleccion_19 +
+                  comando_14 + tiempo_19 +
     				comando_50
     				);
 
@@ -777,12 +759,7 @@ public class FuenteCuestionarioBasico {
     	String[] lamatriz = {
     			cursor.getString(0), cursor.getString(1), cursor.getString(2), cursor.getString(3),
     			cursor.getString(4), cursor.getString(5), cursor.getString(6), cursor.getString(7),
-    			cursor.getString(8), cursor.getString(9), cursor.getString(10), cursor.getString(11),
-                cursor.getString(12),cursor.getString(13),cursor.getString(14),cursor.getString(15),
-                cursor.getString(16),cursor.getString(17),cursor.getString(18),cursor.getString(19),
-                cursor.getString(20),cursor.getString(21),cursor.getString(22),cursor.getString(23),
-                cursor.getString(24),cursor.getString(25),cursor.getString(26),cursor.getString(27),
-                cursor.getString(28),cursor.getString(29),cursor.getString(30),cursor.getString(31)
+    			cursor.getString(8), cursor.getString(9)
     	};
 
     	cursor.close(); 
@@ -792,48 +769,48 @@ public class FuenteCuestionarioBasico {
     // TabletaPantalla0201 = 2014-03-29
     //Guardar Barthel
     public void guardarCaptura_0201(String comando_00,
-    		  String comando_01, Integer seleccion_01,
-              String comando_02, String tiempo_01,
-              String comando_03, Integer seleccion_02,
-              String comando_04, String tiempo_02,
-              String comando_05, Integer seleccion_03,
-              String comando_06, String tiempo_03,
-              String comando_07, Integer seleccion_04,
-              String comando_08, String tiempo_04,
-              String comando_09, Integer seleccion_05,
-              String comando_10, String tiempo_05,
-              String comando_11, Integer seleccion_06,
-              String comando_12, String tiempo_06,
-              String comando_13, Integer seleccion_07,
-              String comando_14, String tiempo_07,
-              String comando_15, Integer seleccion_08,
-              String comando_16, String tiempo_08,
-              String comando_17, Integer seleccion_09,
-              String comando_18, String tiempo_09,
-              String comando_19, Integer seleccion_10,
-              String comando_20, String tiempo_10,
+    		  String comando_01, Integer seleccion_20,
+              String comando_02, String tiempo_20,
+              String comando_03, Integer seleccion_21,
+              String comando_04, String tiempo_21,
+              String comando_05, Integer seleccion_22,
+              String comando_06, String tiempo_22,
+              String comando_07, Integer seleccion_23,
+              String comando_08, String tiempo_23,
+              String comando_09, Integer seleccion_24,
+              String comando_10, String tiempo_24,
+              String comando_11, Integer seleccion_25,
+              String comando_12, String tiempo_25,
+              String comando_13, Integer seleccion_26,
+              String comando_14, String tiempo_26,
+              String comando_15, Integer seleccion_27,
+              String comando_16, String tiempo_27,
+              String comando_17, Integer seleccion_28,
+              String comando_18, String tiempo_28,
+              String comando_19, Integer seleccion_29,
+              String comando_20, String tiempo_29,
 									String comando_50) {
     	db.execSQL(comando_00 +
-    			  comando_01 + seleccion_01 +
-                  comando_02 + tiempo_01 +
-                  comando_03 + seleccion_02 +
-                  comando_04 + tiempo_02 +
-                  comando_05 + seleccion_03 +
-                  comando_06 + tiempo_03 +
-                  comando_07 + seleccion_04 +
-                  comando_08 + tiempo_04 +
-                  comando_09 + seleccion_05 +
-                  comando_10 + tiempo_05 +
-                  comando_11 + seleccion_06 +
-                  comando_12 + tiempo_06 +
-                  comando_13 + seleccion_07 +
-                  comando_14 + tiempo_07 +
-                  comando_15 + seleccion_08 +
-                  comando_16 + tiempo_08 +
-                  comando_17 + seleccion_09 +
-                  comando_18 + tiempo_09 +
-                  comando_19 + seleccion_10 +
-                  comando_20 + tiempo_10 +
+    			  comando_01 + seleccion_20 +
+                  comando_02 + tiempo_20 +
+                  comando_03 + seleccion_21 +
+                  comando_04 + tiempo_21 +
+                  comando_05 + seleccion_22 +
+                  comando_06 + tiempo_22 +
+                  comando_07 + seleccion_23 +
+                  comando_08 + tiempo_23 +
+                  comando_09 + seleccion_24 +
+                  comando_10 + tiempo_24 +
+                  comando_11 + seleccion_25 +
+                  comando_12 + tiempo_25 +
+                  comando_13 + seleccion_26 +
+                  comando_14 + tiempo_26 +
+                  comando_15 + seleccion_27 +
+                  comando_16 + tiempo_27 +
+                  comando_17 + seleccion_28 +
+                  comando_18 + tiempo_28 +
+                  comando_19 + seleccion_29 +
+                  comando_20 + tiempo_29 +
     				comando_50
     				);
 
@@ -853,12 +830,7 @@ public class FuenteCuestionarioBasico {
                 cursor.getString(10), cursor.getString(11), cursor.getString(12), cursor.getString(13),
                 cursor.getString(14), cursor.getString(15), cursor.getString(16), cursor.getString(17),
                 cursor.getString(18), cursor.getString(19),cursor.getString(20),
-                cursor.getString(21), cursor.getString(22), cursor.getString(23),
-                cursor.getString(24), cursor.getString(25), cursor.getString(26), cursor.getString(27),
-                cursor.getString(28), cursor.getString(29),cursor.getString(30),
-                 cursor.getString(31), cursor.getString(32), cursor.getString(33),
-                cursor.getString(34), cursor.getString(35), cursor.getString(36), cursor.getString(37),
-                cursor.getString(38)
+                cursor.getString(21), cursor.getString(22), cursor.getString(23)
     	};
 
     	cursor.close(); 
@@ -868,108 +840,108 @@ public class FuenteCuestionarioBasico {
     // TabletaPantalla0204 = 2019-06-24
     //Guardar MiniMentalPrimero
     public void guardarCaptura_0204(String comando_00,
-    		String comando_01, Integer seleccion_01,
-            String comando_02, String tiempo_01,
-            String comando_03, Integer seleccion_02,
-            String comando_04, String tiempo_02,
-            String comando_05, Integer seleccion_03,
-            String comando_06, String tiempo_03,
-            String comando_07, Integer seleccion_04,
-            String comando_08,  String tiempo_04,
-            String comando_09, Integer seleccion_05,
-            String comando_10, String tiempo_05,
-            String comando_11, Integer seleccion_06,
-            String comando_12, String tiempo_06,
-            String comando_13, Integer seleccion_07,
-            String comando_14, String tiempo_07,
-            String comando_15, Integer seleccion_08,
-            String comando_16, String tiempo_08,
-            String comando_17, Integer seleccion_09,
-            String comando_18, String tiempo_09,
-            String comando_19, Integer seleccion_10,
-            String comando_20, String tiempo_10,
-            String comando_21, Integer seleccion_11,
-            String comando_22, String tiempo_11,
-            String comando_23, Integer seleccion_12R1,
-            String comando_24, String tiempo_12R1,
-            String comando_25, Integer seleccion_12R2,
-            String comando_26, String tiempo_12R2,
-            String comando_27, Integer seleccion_12R3,
-            String comando_28, String tiempo_12R3,
-            String comando_29, Integer seleccion_13R1,
-            String comando_30, String tiempo_13R1,
-            String comando_31, Integer seleccion_13R2,
-            String comando_32, String tiempo_13R2,
-            String comando_33, Integer seleccion_13R3,
-            String comando_34, String tiempo_13R3,
-            String comando_35, Integer seleccion_13R4,
-            String comando_36, String tiempo_13R4,
-            String comando_37, Integer seleccion_13R5,
-            String comando_38, String tiempo_13R5,
-            String comando_39, Integer seleccion_14,
-            String comando_40, String tiempo_14,
-            String comando_41, Integer seleccion_15R1,
-            String comando_42, String tiempo_15R1,
-            String comando_43, Integer seleccion_15R2,
-            String comando_44, String tiempo_15R2,
-            String comando_45, Integer seleccion_15R3,
-            String comando_46, String tiempo_15R3,
-            String comando_47, Integer seleccion_16R1,
-            String comando_48, String tiempo_16R1,
-            String comando_49, Integer seleccion_16R2,
-            String comando_51, String tiempo_16R2,
+    		String comando_01, Integer seleccion_30,
+            String comando_02, String tiempo_30,
+            String comando_03, Integer seleccion_31,
+            String comando_04, String tiempo_31,
+            String comando_05, Integer seleccion_32,
+            String comando_06, String tiempo_32,
+            String comando_07, Integer seleccion_33,
+            String comando_08,  String tiempo_33,
+            String comando_09, Integer seleccion_34,
+            String comando_10, String tiempo_34,
+            String comando_11, Integer seleccion_35,
+            String comando_12, String tiempo_35,
+            String comando_13, Integer seleccion_36,
+            String comando_14, String tiempo_36,
+            String comando_15, Integer seleccion_37,
+            String comando_16, String tiempo_37,
+            String comando_17, Integer seleccion_38,
+            String comando_18, String tiempo_38,
+            String comando_19, Integer seleccion_39,
+            String comando_20, String tiempo_39,
+            String comando_21, Integer seleccion_40,
+            String comando_22, String tiempo_40,
+            String comando_23, Integer seleccion_4101,
+            String comando_24, String tiempo_4101,
+            String comando_25, Integer seleccion_4102,
+            String comando_26, String tiempo_4102,
+            String comando_27, Integer seleccion_4103,
+            String comando_28, String tiempo_4103,
+            String comando_29, Integer seleccion_4201,
+            String comando_30, String tiempo_4201,
+            String comando_31, Integer seleccion_4202,
+            String comando_32, String tiempo_4202,
+            String comando_33, Integer seleccion_4203,
+            String comando_34, String tiempo_4203,
+            String comando_35, Integer seleccion_4204,
+            String comando_36, String tiempo_4204,
+            String comando_37, Integer seleccion_4205,
+            String comando_38, String tiempo_4205,
+            String comando_39, Integer seleccion_43,
+            String comando_40, String tiempo_43,
+            String comando_41, Integer seleccion_4401,
+            String comando_42, String tiempo_4401,
+            String comando_43, Integer seleccion_4402,
+            String comando_44, String tiempo_4402,
+            String comando_45, Integer seleccion_4403,
+            String comando_46, String tiempo_4403,
+            String comando_47, Integer seleccion_4501,
+            String comando_48, String tiempo_4501,
+            String comando_49, Integer seleccion_4502,
+            String comando_51, String tiempo_4502,
     		String comando_50) {
     	db.execSQL(comando_00 +
-    			comando_01 + seleccion_01 +
-                comando_02 + tiempo_01 +
-                comando_03 + seleccion_02 +
-                comando_04 + tiempo_02 +
-                comando_05 + seleccion_03 +
-                comando_06 + tiempo_03 +
-                comando_07 + seleccion_04 +
-                comando_08 + tiempo_04 +
-                comando_09 + seleccion_05 +
-                comando_10 + tiempo_05 +
-                comando_11 + seleccion_06 +
-                comando_12 + tiempo_06 +
-                comando_13 + seleccion_07 +
-                comando_14 + tiempo_07 +
-                comando_15 + seleccion_08 +
-                comando_16 + tiempo_08 +
-                comando_17 + seleccion_09 +
-                comando_18 + tiempo_09 +
-                comando_19 + seleccion_10 +
-                comando_20 + tiempo_10 +
-                comando_21 + seleccion_11 +
-                comando_22 + tiempo_11 +
-                comando_23 + seleccion_12R1 +
-                comando_24 + tiempo_12R1 +
-                comando_25 + seleccion_12R2 +
-                comando_26 + tiempo_12R2 +
-                comando_27 + seleccion_12R3 +
-                comando_28 + tiempo_12R3 +
-                comando_29 + seleccion_13R1 +
-                comando_30 + tiempo_13R1 +
-                comando_31 + seleccion_13R2 +
-                comando_32 + tiempo_13R2 +
-                comando_33 + seleccion_13R3 +
-                comando_34 + tiempo_13R3 +
-                comando_35 + seleccion_13R4 +
-                comando_36 + tiempo_13R4 +
-                comando_37 + seleccion_13R5 +
-                comando_38 + tiempo_13R5 +
-                 comando_39 + seleccion_14 +
-                comando_40 + tiempo_14 +
-                comando_41 + seleccion_15R1 +
-                comando_42 + tiempo_15R1 +
-                comando_43 + seleccion_15R2 +
-                comando_44 + tiempo_15R2 +
-                comando_45 + seleccion_15R3 +
-                comando_46 + tiempo_15R3 +
-                 comando_47 + seleccion_16R1 +
-                comando_48 + tiempo_16R1 +
-                comando_49 + seleccion_16R2 +
-                comando_51 + tiempo_16R2 +
+    			comando_01 + seleccion_30 +
+                comando_02 + tiempo_30 +
+                comando_03 + seleccion_31 +
+                comando_04 + tiempo_31 +
+                comando_05 + seleccion_32 +
+                comando_06 + tiempo_32 +
+                comando_07 + seleccion_33 +
+                comando_08 + tiempo_33 +
+                comando_09 + seleccion_34 +
+                comando_10 + tiempo_34 +
+                comando_11 + seleccion_35 +
+                comando_12 + tiempo_35 +
+                comando_13 + seleccion_36 +
+                comando_14 + tiempo_36 +
+                comando_15 + seleccion_37 +
+                comando_16 + tiempo_37 +
+                comando_17 + seleccion_38 +
+                comando_18 + tiempo_38 +
+                comando_19 + seleccion_39 +
+                comando_20 + tiempo_39 +
+                comando_21 + seleccion_40 +
+                comando_22 + tiempo_40 +
+                comando_23 + seleccion_4101 +
+                comando_24 + tiempo_4101 +
+                comando_25 + seleccion_4102 +
+                comando_26 + tiempo_4102 +
+                comando_27 + seleccion_4103 +
+                comando_28 + tiempo_4103 +
+                comando_29 + seleccion_4201 +
+                comando_30 + tiempo_4201 +
+                comando_31 + seleccion_4202 +
+                comando_32 + tiempo_4202 +
+                comando_33 + seleccion_4203 +
+                comando_34 + tiempo_4203 +
+                comando_35 + seleccion_4204 +
+                comando_36 + tiempo_4204 +
+                comando_37 + seleccion_4205 +
+                comando_38 + tiempo_4205 +
+                 comando_39 + seleccion_43 +
+                comando_40 + tiempo_43 +
+                comando_41 + seleccion_4401 +
+                comando_42 + tiempo_4401 +
+                comando_43 + seleccion_4402 +
+                comando_44 + tiempo_4402 +
+                comando_45 + seleccion_4403 +
+                comando_46 + tiempo_4403 +
+                 comando_47 + seleccion_4501 +
+                comando_48 + tiempo_4501 +
+                comando_49 + seleccion_4502 +
+                comando_51 + tiempo_4502 +
     				comando_50
     				);
 
@@ -984,11 +956,7 @@ public class FuenteCuestionarioBasico {
 
     	String[] lamatriz = {
     			cursor.getString(0), cursor.getString(1), cursor.getString(2), cursor.getString(3),
-    			cursor.getString(4),cursor.getString(5), cursor.getString(6), cursor.getString(7), cursor.getString(8),
-    			cursor.getString(9),cursor.getString(10), cursor.getString(11), cursor.getString(12), cursor.getString(13),
-    			cursor.getString(14),cursor.getString(15), cursor.getString(16), cursor.getString(17), cursor.getString(18),
-    			cursor.getString(19),cursor.getString(20), cursor.getString(21), cursor.getString(22), cursor.getString(23),
-    			cursor.getString(24),cursor.getString(25)
+    			cursor.getString(4),cursor.getString(5), cursor.getString(6)
     	};
 
     	cursor.close(); 
@@ -998,36 +966,36 @@ public class FuenteCuestionarioBasico {
     // TabletaPantalla0207 = 2019-06-24
     //Guardar MiniMental Segundo
     public void guardarCaptura_0207(String comando_00,
-    								String comando_01, Integer seleccion_01,
-    								String comando_02, String tiempo_01,
-    								String comando_03, Integer seleccion_02R1,
-    								String comando_04, String tiempo_02R1,
-    								String comando_05, Integer seleccion_02R2,
-    								String comando_06, String tiempo_02R2,
-    								String comando_07, Integer seleccion_02R3,
-    								String comando_08, String tiempo_02R3,
-    								String comando_09, Integer seleccion_03,
-    								String comando_10, String tiempo_03,
-    								String comando_11, Integer seleccion_04,
-    								String comando_12, String tiempo_04,
-    								String comando_13, Integer seleccion_05,
-    								String comando_14, String tiempo_05,
+    								String comando_01, Integer seleccion_46,
+    								String comando_02, String tiempo_46,
+    								String comando_03, Integer seleccion_4701,
+    								String comando_04, String tiempo_4701,
+    								String comando_05, Integer seleccion_4702,
+    								String comando_06, String tiempo_4702,
+    								String comando_07, Integer seleccion_4703,
+    								String comando_08, String tiempo_4703,
+    								String comando_09, Integer seleccion_48,
+    								String comando_10, String tiempo_48,
+    								String comando_11, Integer seleccion_49,
+    								String comando_12, String tiempo_49,
+    								String comando_13, Integer seleccion_50,
+    								String comando_14, String tiempo_50,
     								String comando_50) {
     	db.execSQL(comando_00 +
-    				comando_01 + seleccion_01 +
-    				comando_02 + tiempo_01 +
-    				comando_03 + seleccion_02R1 +
-    				comando_04 + tiempo_02R1 +
-    				comando_05 + seleccion_02R2 +
-    				comando_06 + tiempo_02R2 +
-    				comando_07 + seleccion_02R3 +
-    				comando_08 + tiempo_02R3 +
-    				comando_09 + seleccion_03 +
-    				comando_10 + tiempo_03 +
-    				comando_11 + seleccion_04 +
-    				comando_12 + tiempo_04 +
-    				comando_13 + seleccion_05 +
-    				comando_14 + tiempo_05 +
+    				comando_01 + seleccion_46 +
+    				comando_02 + tiempo_46 +
+    				comando_03 + seleccion_4701 +
+    				comando_04 + tiempo_4701 +
+    				comando_05 + seleccion_4702 +
+    				comando_06 + tiempo_4702 +
+    				comando_07 + seleccion_4703 +
+    				comando_08 + tiempo_4703 +
+    				comando_09 + seleccion_48 +
+    				comando_10 + tiempo_48 +
+    				comando_11 + seleccion_49 +
+    				comando_12 + tiempo_49 +
+    				comando_13 + seleccion_50 +
+    				comando_14 + tiempo_50 +
     				comando_50
     				);
 

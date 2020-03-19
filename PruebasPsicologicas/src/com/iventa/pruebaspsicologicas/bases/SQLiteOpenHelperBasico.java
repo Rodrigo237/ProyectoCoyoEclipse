@@ -43,157 +43,157 @@ public class SQLiteOpenHelperBasico extends SQLiteOpenHelper {
         public static String COLUMNA_LATITUD_A = "latitud_a";
         public static String COLUMNA_LONGITUD_A = "longitud_a";
         public static String COLUMNA_P_0101 = "p_0101"; //Pregunta 1
-        public static String COLUMNA_T_0101 = "t_0101";
-        public static String COLUMNA_P_0102 = "p_0102";
-        public static String COLUMNA_T_0102 = "t_0102";
-        public static String COLUMNA_P_0103 = "p_0103";
-        public static String COLUMNA_T_0103 = "t_0103";
-        public static String COLUMNA_P_0104 = "p_0104";
-        public static String COLUMNA_T_0104 = "t_0104";
-        public static String COLUMNA_P_0105 = "t_0105";
-        public static String COLUMNA_T_0105 = "t_0105";
+	    public static String COLUMNA_T_0101 = "t_0101";
+	    /*  public static String COLUMNA_P_0102 = "p_0102";
+	        public static String COLUMNA_T_0102 = "t_0102";
+	        public static String COLUMNA_P_0103 = "p_0103";
+	        public static String COLUMNA_T_0103 = "t_0103";
+	        public static String COLUMNA_P_0104 = "p_0104";
+	        public static String COLUMNA_T_0104 = "t_0104";
+	        public static String COLUMNA_P_0105 = "t_0105";
+	        public static String COLUMNA_T_0105 = "t_0105";*/
         public static String COLUMNA_P_0201 = "p_0201"; // Pregunta 2
         public static String COLUMNA_T_0201 = "t_0201";
-        public static String COLUMNA_P_0202 = "p_0202"; 
+      /*  public static String COLUMNA_P_0202 = "p_0202"; 
         public static String COLUMNA_T_0202 = "t_0202"; 
         public static String COLUMNA_P_0203 = "p_0203";
         public static String COLUMNA_T_0203 = "t_0203"; 
         public static String COLUMNA_P_0204 = "p_0204";
         public static String COLUMNA_T_0204 = "t_0204"; 
         public static String COLUMNA_P_0205 = "p_0205";		
-        public static String COLUMNA_T_0205 = "t_0205";		
+        public static String COLUMNA_T_0205 = "t_0205";	*/	
         public static String COLUMNA_P_0301 = "p_0301";	//Pregunta 3
         public static String COLUMNA_T_0301 = "t_0301";	
-        public static String COLUMNA_P_0302 = "p_0302";		
+    /*    public static String COLUMNA_P_0302 = "p_0302";		
         public static String COLUMNA_T_0302 = "t_0302";		
         public static String COLUMNA_P_0303 = "p_0303";	
         public static String COLUMNA_T_0303 = "t_0303";	
         public static String COLUMNA_P_0304 = "p_0304";		
         public static String COLUMNA_T_0304 = "t_0304";		
         public static String COLUMNA_P_0305 = "p_0305"; 
-        public static String COLUMNA_T_0305 = "t_0305"; 
+        public static String COLUMNA_T_0305 = "t_0305"; */
         public static String COLUMNA_P_0401 = "p_0401";//Pregunta 4
         public static String COLUMNA_T_0401 = "t_0401"; 
-        public static String COLUMNA_P_0402 = "p_0402"; 
+      /*  public static String COLUMNA_P_0402 = "p_0402"; 
         public static String COLUMNA_T_0402 = "t_0402"; 
         public static String COLUMNA_P_0403 = "p_0403"; 
         public static String COLUMNA_T_0403 = "t_0403"; 
         public static String COLUMNA_P_0404 = "p_0404"; 
         public static String COLUMNA_T_0404 = "t_0404"; 
         public static String COLUMNA_P_0405 = "p_0405"; 
-        public static String COLUMNA_T_0405 = "t_0405"; 
+        public static String COLUMNA_T_0405 = "t_0405"; */
         public static String COLUMNA_P_0501 = "p_0501"; //Pregunta 5	
         public static String COLUMNA_T_0501 = "t_0501";  
-        public static String COLUMNA_P_0502 = "p_0502"; 
+     /*   public static String COLUMNA_P_0502 = "p_0502"; 
         public static String COLUMNA_T_0502 = "t_0502"; 
         public static String COLUMNA_P_0503 = "p_0503"; 
         public static String COLUMNA_T_0503 = "t_0503"; 
         public static String COLUMNA_P_0504 = "p_0204";		
         public static String COLUMNA_T_0504 = "t_0204";		
         public static String COLUMNA_P_0505 = "p_0505";	
-        public static String COLUMNA_T_0505 = "t_0505";	
+        public static String COLUMNA_T_0505 = "t_0505";	*/
         public static String COLUMNA_P_0601 = "p_0601";	//Pregunta 6
         public static String COLUMNA_T_0601 = "t_0601";	
-        public static String COLUMNA_P_0602 = "p_0602";	
+     /*   public static String COLUMNA_P_0602 = "p_0602";	
         public static String COLUMNA_T_0602 = "t_0602";	
         public static String COLUMNA_P_0603 = "p_0603";		
         public static String COLUMNA_T_0603 = "t_0603";	
         public static String COLUMNA_P_0604 = "p_0604";
         public static String COLUMNA_T_0604 = "t_0604";
         public static String COLUMNA_P_0605 = "p_0605";		
-        public static String COLUMNA_T_0605 = "t_0605";		
+        public static String COLUMNA_T_0605 = "t_0605";	*/	
         public static String COLUMNA_P_0701 = "p_0701";//Pregunta 7
         public static String COLUMNA_T_0701 = "t_0701";
-        public static String COLUMNA_P_0702 = "p_0702";
+      /*  public static String COLUMNA_P_0702 = "p_0702";
         public static String COLUMNA_T_0702 = "t_0702";
         public static String COLUMNA_P_0703 = "p_0703";
         public static String COLUMNA_T_0703 = "t_0703";
         public static String COLUMNA_P_0704 = "p_0704";
         public static String COLUMNA_T_0704 = "t_0704";
         public static String COLUMNA_P_0705 = "p_0705";
-        public static String COLUMNA_T_0705 = "t_0705"; 
+        public static String COLUMNA_T_0705 = "t_0705"; */
         public static String COLUMNA_P_0801 = "p_0801";// Pregunta 8
         public static String COLUMNA_T_0801 = "t_0801";			
-        public static String COLUMNA_P_0802 = "p_0802"; 	
+     /*   public static String COLUMNA_P_0802 = "p_0802"; 	
         public static String COLUMNA_T_0802 = "t_0802"; 	
         public static String COLUMNA_P_0803 = "p_0803"; 	
         public static String COLUMNA_T_0803 = "t_0803"; 	
         public static String COLUMNA_P_0804 = "p_0804"; 	
         public static String COLUMNA_T_0804 = "t_0804";		
         public static String COLUMNA_P_0805 = "p_0805"; 	
-        public static String COLUMNA_T_0805 = "t_0805"; 
+        public static String COLUMNA_T_0805 = "t_0805"; */
         public static String COLUMNA_P_0901 = "p_0901";	//Pregunta 9
         public static String COLUMNA_T_0901 = "t_0901";	
-        public static String COLUMNA_P_0902 = "p_0902";
+     /*   public static String COLUMNA_P_0902 = "p_0902";
         public static String COLUMNA_T_0902 = "t_0902";	
         public static String COLUMNA_P_0903 = "p_0903";		
         public static String COLUMNA_T_0903 = "t_0903";		
         public static String COLUMNA_P_0904 = "p_0904";	
         public static String COLUMNA_T_0904 = "t_0904";	
         public static String COLUMNA_P_0905 = "p_0905";		
-        public static String COLUMNA_T_0905 = "t_0905";		
+        public static String COLUMNA_T_0905 = "t_0905";	*/	
         public static String COLUMNA_P_1001 = "p_1001";// Pregunta 10		
         public static String COLUMNA_T_1001 = "t_1001";		
-        public static String COLUMNA_P_1002 = "p_1002";		
+     /*   public static String COLUMNA_P_1002 = "p_1002";		
         public static String COLUMNA_T_1002 = "t_1002";		
         public static String COLUMNA_P_1003 = "p_1003";		
         public static String COLUMNA_T_1003 = "t_1003";		
         public static String COLUMNA_P_1004 = "p_1004";
         public static String COLUMNA_T_1004 = "t_1004";
         public static String COLUMNA_P_1005 = "p_1005";
-        public static String COLUMNA_T_1005 = "t_1005";	
+        public static String COLUMNA_T_1005 = "t_1005";	*/
         public static String COLUMNA_P_1101 = "p_1101";	//Pregunta 11
         public static String COLUMNA_T_1101 = "t_1101";	
-        public static String COLUMNA_P_1102 = "p_1102";	
+      /*  public static String COLUMNA_P_1102 = "p_1102";	
         public static String COLUMNA_T_1102 = "t_1102";	
         public static String COLUMNA_P_1103 = "p_1103";	
         public static String COLUMNA_T_1103 = "t_1103";	
         public static String COLUMNA_P_1104 = "p_1104";	
         public static String COLUMNA_T_1104 = "t_1104";	
         public static String COLUMNA_P_1105 = "p_1105";	
-        public static String COLUMNA_T_1105 = "t_1105";	
+        public static String COLUMNA_T_1105 = "t_1105";	*/
         public static String COLUMNA_P_1201 = "p_1201";//Pregunta 12	
         public static String COLUMNA_T_1201 = "t_1201";	
-        public static String COLUMNA_P_1202 = "p_1202";	
+       /* public static String COLUMNA_P_1202 = "p_1202";	
         public static String COLUMNA_T_1202 = "t_1202";	
         public static String COLUMNA_P_1203 = "p_1203";	
         public static String COLUMNA_T_1203 = "t_1203";	
         public static String COLUMNA_P_1204 = "p_1204";
         public static String COLUMNA_T_1204 = "t_1204";
         public static String COLUMNA_P_1205 = "p_1205";
-        public static String COLUMNA_T_1205 = "t_1205";
+        public static String COLUMNA_T_1205 = "t_1205";*/
         public static String COLUMNA_P_1301 = "p_1301";//Pregunta 13
         public static String COLUMNA_T_1301 = "t_1301";
-        public static String COLUMNA_P_1302 = "p_1302";
+       /* public static String COLUMNA_P_1302 = "p_1302";
         public static String COLUMNA_T_1302 = "t_1302";
         public static String COLUMNA_P_1303 = "p_1303";
         public static String COLUMNA_T_1303 = "t_1303";
         public static String COLUMNA_P_1304 = "p_1304";
-        public static String COLUMNA_T_1304 = "t_1304";
+        public static String COLUMNA_T_1304 = "t_1304";*/
         public static String COLUMNA_P_1401 = "p_1401";//Pregunta 14
         public static String COLUMNA_T_1401 = "t_1401";
-        public static String COLUMNA_P_1402 = "p_1402";
+      /*  public static String COLUMNA_P_1402 = "p_1402";
         public static String COLUMNA_T_1402 = "t_1402";
         public static String COLUMNA_P_1403 = "p_1403"; 
         public static String COLUMNA_T_1403 = "t_1403"; 
         public static String COLUMNA_P_1404 = "p_1404"; 
-        public static String COLUMNA_T_1404 = "t_1404"; 
+        public static String COLUMNA_T_1404 = "t_1404"; */
         public static String COLUMNA_P_1501 = "p_1501";//Pregunta 15 
         public static String COLUMNA_T_1501 = "t_1501"; 
-        public static String COLUMNA_P_1502 = "p_1502"; 
+      /*  public static String COLUMNA_P_1502 = "p_1502"; 
         public static String COLUMNA_T_1502 = "t_1502"; 
         public static String COLUMNA_P_1503 = "p_1503"; 
         public static String COLUMNA_T_1503 = "t_1503"; 
         public static String COLUMNA_P_1504 = "p_1504"; 
-        public static String COLUMNA_T_1504 = "t_1504"; 
+        public static String COLUMNA_T_1504 = "t_1504"; */ 
         public static String COLUMNA_P_1601 = "p_1601";//Pregunta 16 
         public static String COLUMNA_T_1601 = "t_1601"; 
-        public static String COLUMNA_P_1602 = "p_1602"; 
+      /*  public static String COLUMNA_P_1602 = "p_1602"; 
         public static String COLUMNA_T_1602 = "t_1602";  
         public static String COLUMNA_P_1603 = "p_1603"; 
         public static String COLUMNA_T_1603 = "t_1603"; 
         public static String COLUMNA_P_1604 = "p_1604"; 
-        public static String COLUMNA_T_1604 = "t_1604";  
+        public static String COLUMNA_T_1604 = "t_1604"; */  
         public static String COLUMNA_P_1701 = "p_1701";//Pregunta 17 
         public static String COLUMNA_T_1701 = "t_1701"; 
         public static String COLUMNA_P_1702 = "p_1702"; 
@@ -389,156 +389,156 @@ public class SQLiteOpenHelperBasico extends SQLiteOpenHelper {
     		+ TablaCuestionarioBasico.COLUMNA_LONGITUD_A + " text, "
     		+ TablaCuestionarioBasico.COLUMNA_P_0101 + " integer, " //Pregunta1
     		+ TablaCuestionarioBasico.COLUMNA_T_0101 + " text, "
-    		+ TablaCuestionarioBasico.COLUMNA_P_0102 + " integer, "
+    	/*	+ TablaCuestionarioBasico.COLUMNA_P_0102 + " integer, "
     		+ TablaCuestionarioBasico.COLUMNA_T_0102 + " text, "
     		+ TablaCuestionarioBasico.COLUMNA_P_0103 + " integer, "
     		+ TablaCuestionarioBasico.COLUMNA_T_0103 + " text, "
     		+ TablaCuestionarioBasico.COLUMNA_P_0104 + " integer, "
     		+ TablaCuestionarioBasico.COLUMNA_T_0104 + " text, "
     		+ TablaCuestionarioBasico.COLUMNA_P_0105 + " integer, "	
-    		+ TablaCuestionarioBasico.COLUMNA_T_0105 + " text, "		
+    		+ TablaCuestionarioBasico.COLUMNA_T_0105 + " text, "	*/	
     		+ TablaCuestionarioBasico.COLUMNA_P_0201 + " integer, "	//Pregunta2
     		+ TablaCuestionarioBasico.COLUMNA_T_0201 + " text, "		
-    		+ TablaCuestionarioBasico.COLUMNA_P_0202 + " integer, "	
+    	/*	+ TablaCuestionarioBasico.COLUMNA_P_0202 + " integer, "	
     		+ TablaCuestionarioBasico.COLUMNA_T_0202 + " text, "		
     		+ TablaCuestionarioBasico.COLUMNA_P_0203 + " integer, "
     		+ TablaCuestionarioBasico.COLUMNA_T_0203 + " text, "		
     		+ TablaCuestionarioBasico.COLUMNA_P_0204 + " integer, "		
     		+ TablaCuestionarioBasico.COLUMNA_T_0204 + " text, "		
     		+ TablaCuestionarioBasico.COLUMNA_P_0205 + " integer, "	
-    		+ TablaCuestionarioBasico.COLUMNA_T_0205 + " text, "		
+    		+ TablaCuestionarioBasico.COLUMNA_T_0205 + " text, "	*/	
     		+ TablaCuestionarioBasico.COLUMNA_P_0301 + " integer, "		//Pregunta3
     		+ TablaCuestionarioBasico.COLUMNA_T_0301 + " text, "		
-    		+ TablaCuestionarioBasico.COLUMNA_P_0302 + " integer, "	
+    	/*	+ TablaCuestionarioBasico.COLUMNA_P_0302 + " integer, "	
     		+ TablaCuestionarioBasico.COLUMNA_T_0302 + " text, "		
     		+ TablaCuestionarioBasico.COLUMNA_P_0303 + " integer, "		
     		+ TablaCuestionarioBasico.COLUMNA_T_0303 + " text, "		
     		+ TablaCuestionarioBasico.COLUMNA_P_0304 + " integer, "	
     		+ TablaCuestionarioBasico.COLUMNA_T_0304 + " text, "		
     		+ TablaCuestionarioBasico.COLUMNA_P_0305 + " integer, "	
-    		+ TablaCuestionarioBasico.COLUMNA_T_0305 + " text, "		
+    		+ TablaCuestionarioBasico.COLUMNA_T_0305 + " text, "	*/	
     		+ TablaCuestionarioBasico.COLUMNA_P_0401 + " integer, "	//Pregunta4
     		+ TablaCuestionarioBasico.COLUMNA_T_0401 + " text, "		
-    		+ TablaCuestionarioBasico.COLUMNA_P_0402 + " integer, "	
+    	/*	+ TablaCuestionarioBasico.COLUMNA_P_0402 + " integer, "	
     		+ TablaCuestionarioBasico.COLUMNA_T_0402 + " text, "		
     		+ TablaCuestionarioBasico.COLUMNA_P_0403 + " integer, "	
     		+ TablaCuestionarioBasico.COLUMNA_T_0403 + " text, "		
     		+ TablaCuestionarioBasico.COLUMNA_P_0404 + " integer, "	
     		+ TablaCuestionarioBasico.COLUMNA_T_0404 + " text, "		
     		+ TablaCuestionarioBasico.COLUMNA_P_0405 + " integer, "	
-    		+ TablaCuestionarioBasico.COLUMNA_T_0405 + " text, "		
+    		+ TablaCuestionarioBasico.COLUMNA_T_0405 + " text, "	*/	
     		+ TablaCuestionarioBasico.COLUMNA_P_0501 + " integer, "	//Pregunta5
     		+ TablaCuestionarioBasico.COLUMNA_T_0501 + " text, "		
-    		+ TablaCuestionarioBasico.COLUMNA_P_0502 + " integer, "	
+    	/*	+ TablaCuestionarioBasico.COLUMNA_P_0502 + " integer, "	
     		+ TablaCuestionarioBasico.COLUMNA_T_0502 + " text, "		
     		+ TablaCuestionarioBasico.COLUMNA_P_0503 + " integer, "		
     		+ TablaCuestionarioBasico.COLUMNA_T_0503 + " text, "		
     		+ TablaCuestionarioBasico.COLUMNA_P_0504 + " integer, "	
     		+ TablaCuestionarioBasico.COLUMNA_T_0504 + " text, "		
     		+ TablaCuestionarioBasico.COLUMNA_P_0505 + " integer, "	
-    		+ TablaCuestionarioBasico.COLUMNA_T_0505 + " text, "		
+    		+ TablaCuestionarioBasico.COLUMNA_T_0505 + " text, "	*/	
     		+ TablaCuestionarioBasico.COLUMNA_P_0601 + " integer, "	//Pregunta6	
     		+ TablaCuestionarioBasico.COLUMNA_T_0601 + " text, "		
-    		+ TablaCuestionarioBasico.COLUMNA_P_0602 + " integer, "		
+    	/*	+ TablaCuestionarioBasico.COLUMNA_P_0602 + " integer, "		
     		+ TablaCuestionarioBasico.COLUMNA_T_0602 + " text, "		
     		+ TablaCuestionarioBasico.COLUMNA_P_0603 + " integer, "		
     		+ TablaCuestionarioBasico.COLUMNA_T_0603 + " text, "		
     		+ TablaCuestionarioBasico.COLUMNA_P_0604 + " integer, "		
     		+ TablaCuestionarioBasico.COLUMNA_T_0604 + " text, "		
     		+ TablaCuestionarioBasico.COLUMNA_P_0605 + " integer, "
-    		+ TablaCuestionarioBasico.COLUMNA_T_0605 + " text, "
+    		+ TablaCuestionarioBasico.COLUMNA_T_0605 + " text, " */
     		+ TablaCuestionarioBasico.COLUMNA_P_0701 + " integer, "//Pregunta7
     		+ TablaCuestionarioBasico.COLUMNA_T_0701 + " text, "
-    		+ TablaCuestionarioBasico.COLUMNA_P_0702 + " integer, "
+    	/*	+ TablaCuestionarioBasico.COLUMNA_P_0702 + " integer, "
     		+ TablaCuestionarioBasico.COLUMNA_T_0702 + " text, "
     		+ TablaCuestionarioBasico.COLUMNA_P_0703 + " integer, "
     		+ TablaCuestionarioBasico.COLUMNA_T_0703 + " text, "
     		+ TablaCuestionarioBasico.COLUMNA_P_0704 + " integer, "
     		+ TablaCuestionarioBasico.COLUMNA_T_0704 + " text, "
     		+ TablaCuestionarioBasico.COLUMNA_P_0705 + " integer, "
-    		+ TablaCuestionarioBasico.COLUMNA_T_0705 + " text, "
+    		+ TablaCuestionarioBasico.COLUMNA_T_0705 + " text, "*/
     		+ TablaCuestionarioBasico.COLUMNA_P_0801 + " integer, "//Pregunta8	
     		+ TablaCuestionarioBasico.COLUMNA_T_0801 + " text, "		
-    		+ TablaCuestionarioBasico.COLUMNA_P_0802 + " integer, "	
+    	/*	+ TablaCuestionarioBasico.COLUMNA_P_0802 + " integer, "	
     		+ TablaCuestionarioBasico.COLUMNA_T_0802 + " text, "		
     		+ TablaCuestionarioBasico.COLUMNA_P_0803 + " integer, "	
     		+ TablaCuestionarioBasico.COLUMNA_T_0803 + " text, "		
     		+ TablaCuestionarioBasico.COLUMNA_P_0804 + " integer, "	
     		+ TablaCuestionarioBasico.COLUMNA_T_0804 + " text, "		
     		+ TablaCuestionarioBasico.COLUMNA_P_0805 + " integer, "		
-    		+ TablaCuestionarioBasico.COLUMNA_T_0805 + " text, "		
+    		+ TablaCuestionarioBasico.COLUMNA_T_0805 + " text, "	*/	
     		+ TablaCuestionarioBasico.COLUMNA_P_0901 + " integer, "//Pregunta9	
     		+ TablaCuestionarioBasico.COLUMNA_T_0901 + " text, "		
-    		+ TablaCuestionarioBasico.COLUMNA_P_0902 + " integer, "		
+    	/*	+ TablaCuestionarioBasico.COLUMNA_P_0902 + " integer, "		
     		+ TablaCuestionarioBasico.COLUMNA_T_0902 + " text, "		
     		+ TablaCuestionarioBasico.COLUMNA_P_0903 + " integer, "	
     		+ TablaCuestionarioBasico.COLUMNA_T_0903 + " text, "		
     		+ TablaCuestionarioBasico.COLUMNA_P_0904 + " integer, "
     		+ TablaCuestionarioBasico.COLUMNA_T_0904 + " text, "
     		+ TablaCuestionarioBasico.COLUMNA_P_0905 + " integer, "
-    		+ TablaCuestionarioBasico.COLUMNA_T_0905 + " text, "
+    		+ TablaCuestionarioBasico.COLUMNA_T_0905 + " text, "*/
     		+ TablaCuestionarioBasico.COLUMNA_P_1001 + " integer, "//Pregunta10
     		+ TablaCuestionarioBasico.COLUMNA_T_1001 + " text, "
-    		+ TablaCuestionarioBasico.COLUMNA_P_1002 + " integer, "
+    	/*	+ TablaCuestionarioBasico.COLUMNA_P_1002 + " integer, "
     		+ TablaCuestionarioBasico.COLUMNA_T_1002 + " text, "
     		+ TablaCuestionarioBasico.COLUMNA_P_1003 + " integer, "
     		+ TablaCuestionarioBasico.COLUMNA_T_1003 + " text, "
     		+ TablaCuestionarioBasico.COLUMNA_P_1004 + " integer, "
     		+ TablaCuestionarioBasico.COLUMNA_T_1004 + " text, "
     		+ TablaCuestionarioBasico.COLUMNA_P_1005 + " integer, "
-    		+ TablaCuestionarioBasico.COLUMNA_T_1005 + " text, "
+    		+ TablaCuestionarioBasico.COLUMNA_T_1005 + " text, " */
     		+ TablaCuestionarioBasico.COLUMNA_P_1101 + " integer, "//Pregunta11
     		+ TablaCuestionarioBasico.COLUMNA_T_1101 + " text, "
-    		+ TablaCuestionarioBasico.COLUMNA_P_1102 + " integer, "
+    	/*	+ TablaCuestionarioBasico.COLUMNA_P_1102 + " integer, "
     		+ TablaCuestionarioBasico.COLUMNA_T_1102 + " text, "
     		+ TablaCuestionarioBasico.COLUMNA_P_1103 + " integer, "
     		+ TablaCuestionarioBasico.COLUMNA_T_1103 + " text, "
     		+ TablaCuestionarioBasico.COLUMNA_P_1104 + " integer, "
     		+ TablaCuestionarioBasico.COLUMNA_T_1104 + " text, "
     		+ TablaCuestionarioBasico.COLUMNA_P_1105 + " integer, "
-    		+ TablaCuestionarioBasico.COLUMNA_T_1105 + " text, "
+    		+ TablaCuestionarioBasico.COLUMNA_T_1105 + " text, " */
     		+ TablaCuestionarioBasico.COLUMNA_P_1201 + " integer, "//Pregunta12
     		+ TablaCuestionarioBasico.COLUMNA_T_1201 + " text, "
-    		+ TablaCuestionarioBasico.COLUMNA_P_1202 + " integer, "
+    	/*	+ TablaCuestionarioBasico.COLUMNA_P_1202 + " integer, "
     		+ TablaCuestionarioBasico.COLUMNA_T_1202 + " text, "
     		+ TablaCuestionarioBasico.COLUMNA_P_1203 + " integer, "	
     		+ TablaCuestionarioBasico.COLUMNA_T_1203 + " text, "	
     		+ TablaCuestionarioBasico.COLUMNA_P_1204 + " integer, "	
     		+ TablaCuestionarioBasico.COLUMNA_T_1204 + " text, "		
     		+ TablaCuestionarioBasico.COLUMNA_P_1205 + " integer, "	
-    		+ TablaCuestionarioBasico.COLUMNA_T_1205 + " text, "	
+    		+ TablaCuestionarioBasico.COLUMNA_T_1205 + " text, " */	
     		+ TablaCuestionarioBasico.COLUMNA_P_1301 + " integer, "//Pregunta13	
     		+ TablaCuestionarioBasico.COLUMNA_T_1301 + " text, "	
-    		+ TablaCuestionarioBasico.COLUMNA_P_1302 + " integer, "	
+    	/*	+ TablaCuestionarioBasico.COLUMNA_P_1302 + " integer, "	
     		+ TablaCuestionarioBasico.COLUMNA_T_1302 + " text, "	
     		+ TablaCuestionarioBasico.COLUMNA_P_1303 + " integer, "	
     		+ TablaCuestionarioBasico.COLUMNA_T_1303 + " text, "	
     		+ TablaCuestionarioBasico.COLUMNA_P_1304 + " integer, "	
-    		+ TablaCuestionarioBasico.COLUMNA_T_1304 + " text, "	
+    		+ TablaCuestionarioBasico.COLUMNA_T_1304 + " text, " */	
     		+ TablaCuestionarioBasico.COLUMNA_P_1401 + " integer, "	//Pregunta14
     		+ TablaCuestionarioBasico.COLUMNA_T_1401 + " text, "	
-    		+ TablaCuestionarioBasico.COLUMNA_P_1402 + " integer, "	
+    	/*	+ TablaCuestionarioBasico.COLUMNA_P_1402 + " integer, "	
     		+ TablaCuestionarioBasico.COLUMNA_T_1402 + " text, "	
     		+ TablaCuestionarioBasico.COLUMNA_P_1403 + " integer, "
     		+ TablaCuestionarioBasico.COLUMNA_T_1403 + " text, "	
     		+ TablaCuestionarioBasico.COLUMNA_P_1404 + " integer, "	
-    		+ TablaCuestionarioBasico.COLUMNA_T_1404 + " text, "	
+    		+ TablaCuestionarioBasico.COLUMNA_T_1404 + " text, "	*/
     		+ TablaCuestionarioBasico.COLUMNA_P_1501 + " integer, "	//Pregunta15
     		+ TablaCuestionarioBasico.COLUMNA_T_1501 + " text, "	
-    		+ TablaCuestionarioBasico.COLUMNA_P_1502 + " integer, "	
+    	/*	+ TablaCuestionarioBasico.COLUMNA_P_1502 + " integer, "	
     		+ TablaCuestionarioBasico.COLUMNA_T_1502 + " text, "	
     		+ TablaCuestionarioBasico.COLUMNA_P_1503 + " integer, "	
     		+ TablaCuestionarioBasico.COLUMNA_T_1503 + " text, "	
     		+ TablaCuestionarioBasico.COLUMNA_P_1504 + " integer, "	
-    		+ TablaCuestionarioBasico.COLUMNA_T_1504 + " text, "	
+    		+ TablaCuestionarioBasico.COLUMNA_T_1504 + " text, "	*/
     		+ TablaCuestionarioBasico.COLUMNA_P_1601 + " integer, "	//Pregunta16
     		+ TablaCuestionarioBasico.COLUMNA_T_1601 + " text, "	
-    		+ TablaCuestionarioBasico.COLUMNA_P_1602 + " integer, "
+    	/*	+ TablaCuestionarioBasico.COLUMNA_P_1602 + " integer, "
     		+ TablaCuestionarioBasico.COLUMNA_T_1602 + " text, "	
     		+ TablaCuestionarioBasico.COLUMNA_P_1603 + " integer, "
     		+ TablaCuestionarioBasico.COLUMNA_T_1603 + " text, "	
     		+ TablaCuestionarioBasico.COLUMNA_P_1604 + " integer, "
-    		+ TablaCuestionarioBasico.COLUMNA_T_1604 + " text, "	
+    		+ TablaCuestionarioBasico.COLUMNA_T_1604 + " text, "	*/
     		+ TablaCuestionarioBasico.COLUMNA_P_1701 + " integer, "	//Pregunta17
     		+ TablaCuestionarioBasico.COLUMNA_T_1701 + " text, "	
     		+ TablaCuestionarioBasico.COLUMNA_P_1702 + " integer, "	

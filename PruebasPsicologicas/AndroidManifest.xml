@@ -40,7 +40,6 @@
         <activity android:name=".TabletaAdministrador" android:label="@string/aplicacionAdministrador"></activity>
         <activity android:name=".TabletaBuscarCuestionario" android:label="@string/aplicacionBuscarCuestionario" android:windowSoftInputMode="stateHidden"></activity>
         <activity android:name=".TabletaBuscarEncuestadora" android:label="@string/aplicacionBuscarEncuestadora"></activity>
-        <activity android:name=".TabletaBuscarxEncuestadora" android:label="@string/aplicacionBuscarEncuestadora"></activity>
         <activity android:name=".TabletaBuscarProspecto" android:label="@string/aplicacionBuscarProspecto" android:windowSoftInputMode="stateHidden"></activity>
 	</application>
 </manifest>

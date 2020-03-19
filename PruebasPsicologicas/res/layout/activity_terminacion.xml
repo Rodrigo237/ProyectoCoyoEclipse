@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fondo_azul_solo" >
+    android:background="@drawable/fondo_azul_solo"
+    tools:ignore="Overdraw,UnusedResources" >
 
     <TextView
         android:id="@+id/textView1"
@@ -34,10 +36,10 @@
             android:text="@string/texto_cuestionario_incompleto" />
 
         <RadioButton
-            android:id="@+id/resultadonegado"
+            android:id="@+id/resultadonegativo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/texto_cuestionario_ nocompletado" />
+            android:text="@string/texto_cuestionario_negativo" />
 
         <RadioButton
             android:id="@+id/resultadonosabe"

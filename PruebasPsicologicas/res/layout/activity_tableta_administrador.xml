@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/fondo_azul_solo"
     tools:context=".pantallas.TabletaAdministrador"
-    tools:ignore="ContentDescription" >
+    tools:ignore="ContentDescription,Overdraw,UnusedResources" >
 
     <TextView
         android:id="@+id/texto_administrador"
